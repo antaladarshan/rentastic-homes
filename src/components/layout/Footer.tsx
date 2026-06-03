@@ -77,12 +77,12 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-outline/20 max-w-[1280px] mx-auto px-gutter py-md flex flex-col sm:flex-row justify-between items-center gap-sm">
         <p className="text-body-sm text-surface-variant/80">© {new Date().getFullYear()} Rentastic Homes. All rights reserved.</p>
-        <div className="flex gap-md text-body-sm text-surface-variant/60">
+        <div className="flex flex-wrap gap-md text-body-sm text-surface-variant/60">
           {[
-            { label: "Privacy Policy",      href: "/privacy" },
-            { label: "Terms & Conditions",  href: "/terms" },
-            { label: "Refund Policy",       href: "/refund" },
-            { label: "Cancellation Policy", href: "/cancellation" },
+            { label: "Privacy Policy",      href: "/privacy-policy" },
+            { label: "Terms & Conditions",  href: "/terms-conditions" },
+            { label: "Refund Policy",       href: "/refund-policy" },
+            { label: "Cancellation Policy", href: "/cancellation-policy" },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="hover:text-primary-fixed transition-colors">{l.label}</Link>
           ))}

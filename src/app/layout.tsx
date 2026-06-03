@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
-import Nav    from "@/components/layout/Nav";
+import FloatingNav from "@/components/layout/FloatingNav";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${plusJakarta.variable} scroll-smooth`}>
-      <body className="min-h-screen flex flex-col antialiased overflow-x-hidden bg-background text-on-background">
-        <Nav />
+      <body className="min-h-screen flex flex-col antialiased overflow-x-hidden bg-background text-on-background pt-16">
+        <FloatingNav />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>

@@ -5,8 +5,8 @@ import AboutEnquiryForm from "@/components/ui/AboutEnquiryForm";
 import WhatsAppFab from "@/components/ui/WhatsAppFab";
 
 export const metadata: Metadata = {
-  title: "About Us — Our Story",
-  description: "Rentastic Homes was built to redefine student and professional co-living in India. Checked In, Worries Out!",
+  title: "About Rentastic Homes — Our Story",
+  description: "Rentastic Homes - Premium PG and co-living in Ahmedabad built to redefine student living. Checked In, Worries Out!",
 };
 
 const values = [
@@ -43,12 +43,14 @@ export default function AboutPage() {
             <div className="flex flex-col gap-md">
               <h2 className="text-headline-md text-on-surface">Where It Started. Where It&apos;s Going.</h2>
               <p className="text-body-md text-on-surface-variant">
-                Our journey began with a simple observation: finding quality, dependable housing for students and young
-                professionals was harder than it should be. The market was fragmented, lacking a standard of care that
-                respected residents&apos; need for both comfort and community. We set out to change that by building a brand
-                focused on meticulous service, transparent communication, and thoughtfully designed spaces. Today, we&apos;re
-                growing across key locations, carrying that original promise forward.
+                Founded in 2021 by Yash Patel, Rentastic Homes began with a simple observation: finding quality, dependable housing for students and young professionals was harder than it should be. The market was fragmented, lacking a standard of care that respected residents&apos; need for both comfort and community. We set out to change that by building a brand focused on meticulous service, transparent communication, and thoughtfully designed spaces. Today, we&apos;re growing across key locations in Ahmedabad, carrying that original promise forward.
               </p>
+              <div className="flex flex-col gap-sm">
+                <p className="text-label-caps text-on-surface font-semibold">Founded by</p>
+                <div className="px-md py-sm bg-secondary-container/20 rounded-full border border-secondary/30 inline-block">
+                  <span className="text-body-sm font-semibold text-on-surface">Yash Patel</span>
+                </div>
+              </div>
             </div>
             <div className="rounded-xl overflow-hidden shadow-warm">
               <Image
@@ -79,8 +81,8 @@ export default function AboutPage() {
         <section className="py-xl px-gutter max-w-[1280px] mx-auto">
           <div className="grid md:grid-cols-2 gap-lg">
             {[
-              { icon: <Heart size={24} />, title: "Our Mission",  body: "To redefine student living by providing spaces that prioritise comfort, safety, and a genuine sense of belonging. We handle the complexities of daily life so our residents can focus entirely on their studies and personal growth." },
-              { icon: <Eye   size={24} />, title: "Our Vision",   body: "To be the undisputed #1 co-living choice in India, recognised for our unwavering commitment to quality, innovative community building, and delivering a consistently premium living experience that truly feels like home." },
+              { icon: <Heart size={24} />, title: "Our Mission",  body: "To provide premium, fully-managed, safe living spaces for students and young professionals with a focus on community, comfort, and peace of mind. We handle the complexities of daily life so our residents can focus entirely on their studies and personal growth." },
+              { icon: <Eye   size={24} />, title: "Our Vision",   body: "To be the most trusted co-living brand in India, delivering 'Checked In, Worries Out!' living experiences that combine premium amenities with genuine community care and unwavering safety standards." },
             ].map((item) => (
               <div key={item.title} className="bg-surface-container-lowest p-lg rounded-xl shadow-warm border border-outline-variant/30 flex flex-col gap-md">
                 <div className="w-12 h-12 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center">

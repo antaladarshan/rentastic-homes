@@ -3,12 +3,73 @@ export const siteConfig = {
   tagline:     "Checked In, Worries Out!",
   description: "Premium PG & co-living for students and young professionals. Safe, fully managed, fully furnished.",
   url:         "https://rentastichomes.com",
-  // ⚠️  Update to the correct 10-digit number (91 + 10 digits)
-  whatsapp:    "918282823372",   // Rentastic Ansh (Boys + Girls main)
-  whatsappSatellite: "918511671066", // Rentastic Girls Satellite
+  whatsapp:    "918282823372",     // Rentastic Homes Ansh (Boys + Girls)
+  whatsappSatellite: "918511671066", // Rentastic Homes Girls Satellite
+  whatsappGurukul: "917359678751",   // Rentastic Homes Gurukul Road
   email:       "rentastichomes2025@gmail.com",
   socials: {
     instagram: "https://instagram.com/rentastichomes",
     facebook:  "https://facebook.com/rentastichomes",
   },
+  properties: [
+    {
+      id: "ansh-boys",
+      name: "Rentastic Homes Ansh Boys",
+      location: "Navrangpura",
+      address: "201, Swastik Cross Rd, Nar Narayan Society, ANSH RESIDENCY, Navrangpura, Ahmedabad, Gujarat 380009",
+      whatsapp: "918282823372",
+      phone: "8282823372",
+      hours: "10:00 AM - 10:00 PM",
+      priceRange: { min: 9000, max: 12799 },
+      status: "Limited Seats Available",
+    },
+    {
+      id: "ansh-girls",
+      name: "Rentastic Homes Ansh Girls",
+      location: "Navrangpura",
+      address: "201, Swastik Cross Rd, Nar Narayan Society, ANSH RESIDENCY, Navrangpura, Ahmedabad, Gujarat 380009",
+      whatsapp: "918282823372",
+      phone: "8282823372",
+      hours: "10:00 AM - 10:00 PM",
+      priceRange: { min: 9000, max: 12799 },
+      status: "Limited Seats Available",
+    },
+    {
+      id: "satellite-girls",
+      name: "Rentastic Homes Girls Satellite",
+      location: "Satellite",
+      address: "4th Floor, Aishwarya Apartment B4/2, opp Star Bazzar, Jodhupur Village, Satellite, Ahmedabad, Gujarat 380015",
+      whatsapp: "918511671066",
+      phone: "8511671066",
+      hours: "10:00 AM - 10:00 PM",
+      priceRange: { min: 11000, max: 12500 },
+      pricing: {
+        "3-sharing": 12500,
+        "4-sharing-balcony": 11500,
+        "4-sharing": 11000,
+      },
+      status: "Limited Seats Available",
+    },
+    {
+      id: "gurukul",
+      name: "Rentastic Homes Gurukul Road",
+      location: "Gurukul",
+      address: "2nd Floor, 207, Pushti Heights, Subhash Chowk, opp. NAVNEET HOUSE, Nilmani Society, Gurukul, Ahmedabad, Gujarat 380052",
+      whatsapp: "917359678751",
+      phone: "7359678751",
+      hours: "10:00 AM - 10:00 PM",
+      priceRange: { min: 11000, max: 17000 },
+      status: "Limited Seats Available",
+    },
+  ],
+  founder: "Yash Patel",
+  establishedYear: 2021,
+  mission: "To provide premium, fully-managed, safe living spaces for students and young professionals with a focus on community, comfort, and peace of mind.",
+  values: [
+    "Safety First — 24/7 security and care for all residents",
+    "Community Built — Foster meaningful connections and friendships",
+    "Comfort & Quality — Premium amenities and maintenance standards",
+    "Transparent Pricing — No hidden charges, all-inclusive rent",
+    "Checked In, Worries Out — Your peace of mind is our priority",
+  ],
 } as const;

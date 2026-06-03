@@ -1,20 +1,21 @@
 import {
   Wind, Wifi, UtensilsCrossed, Sparkles, Shirt,
-  Droplets, Archive, BookOpen, Flame, Dumbbell, Users,
+  Droplets, Archive, BookOpen, Flame, Dumbbell, Users, Shield, Lock,
 } from "lucide-react";
 
 const amenities = [
   { icon: <Wind size={28} />,           label: "AC Rooms" },
-  { icon: <Wifi size={28} />,           label: "Wi-Fi" },
-  { icon: <UtensilsCrossed size={28} />,label: "Nutritious Meals" },
-  { icon: <Sparkles size={28} />,       label: "Housekeeping" },
-  { icon: <Shirt size={28} />,          label: "Laundry" },
-  { icon: <Droplets size={28} />,       label: "Attached Washroom" },
-  { icon: <Archive size={28} />,        label: "Wardrobe" },
+  { icon: <Wifi size={28} />,           label: "High-Speed Wi-Fi" },
+  { icon: <UtensilsCrossed size={28} />,label: "3x Nutritious Meals" },
+  { icon: <Shield size={28} />,         label: "24/7 Security Guard" },
+  { icon: <Lock size={28} />,           label: "Biometric Locks" },
+  { icon: <Shirt size={28} />,          label: "Laundry Service" },
+  { icon: <Droplets size={28} />,       label: "Hot Water" },
+  { icon: <Archive size={28} />,        label: "Attached Washroom" },
   { icon: <BookOpen size={28} />,       label: "Study Table" },
-  { icon: <Flame size={28} />,          label: "Hot Water" },
-  { icon: <Dumbbell size={28} />,       label: "Gym" },
-  { icon: <Users size={28} />,          label: "Hangout Zones", wide: true },
+  { icon: <Sparkles size={28} />,       label: "Housekeeping" },
+  { icon: <Flame size={28} />,          label: "Premium Furnishings" },
+  { icon: <Users size={28} />,          label: "Community Zones", wide: true },
 ];
 
 export default function AmenityGrid() {

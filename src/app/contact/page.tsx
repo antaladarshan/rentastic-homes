@@ -24,8 +24,8 @@ const contactDetails = [
   },
   {
     icon: <MapPin size={24} />,
-    label: "Visit Us",
-    value: "Navrangpura & Satellite, Ahmedabad, Gujarat",
+    label: "Offices",
+    value: "Navrangpura, Satellite & Gurukul",
     href:  "https://maps.google.com",
   },
 ];
@@ -33,7 +33,7 @@ const contactDetails = [
 export default function ContactPage() {
   return (
     <>
-      <main className="pt-20">
+      <main>
         {/* Hero */}
         <section className="bg-surface-container-low py-xl px-gutter text-center">
           <div className="max-w-[1280px] mx-auto flex flex-col gap-md">
@@ -101,19 +101,15 @@ export default function ContactPage() {
             <div className="flex flex-col gap-lg">
               <div className="flex flex-col gap-sm">
                 <h3 className="text-headline-sm text-on-surface">Our Properties</h3>
-                {[
-                  { name: "Ansh Rentastic Girls PG",   area: "Navrangpura, Ahmedabad", phone: siteConfig.whatsapp },
-                  { name: "Rentastic Girls Satellite",  area: "Satellite, Ahmedabad",  phone: siteConfig.whatsappSatellite },
-                  { name: "Rentastic Ansh Boys PG",     area: "Navrangpura, Ahmedabad", phone: siteConfig.whatsapp },
-                ].map((p) => (
-                  <div key={p.name} className="flex items-start gap-sm p-md bg-surface-container-low rounded-lg border border-outline-variant/10">
+                {siteConfig.properties.map((p) => (
+                  <div key={p.id} className="flex items-start gap-sm p-md bg-surface-container-low rounded-lg border border-outline-variant/10">
                     <MapPin size={18} className="text-primary mt-0.5 shrink-0" />
                     <div>
                       <p className="text-body-md font-semibold text-on-surface">{p.name}</p>
-                      <p className="text-body-sm text-on-surface-variant">{p.area}</p>
-                      <a href={`https://wa.me/${p.phone}`} target="_blank" rel="noopener noreferrer"
+                      <p className="text-body-sm text-on-surface-variant">{p.location}, Ahmedabad</p>
+                      <a href={`https://wa.me/${p.whatsapp}`} target="_blank" rel="noopener noreferrer"
                         className="text-body-sm text-primary hover:text-primary-container transition-colors">
-                        +{p.phone}
+                        +{p.whatsapp}
                       </a>
                     </div>
                   </div>

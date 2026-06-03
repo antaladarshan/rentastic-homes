@@ -8,40 +8,30 @@ import WhatsAppFab    from "@/components/ui/WhatsAppFab";
 import type { Property } from "@/components/sections/PropertyGrid";
 
 export const metadata: Metadata = {
-  title: "#1 PG for Girls in [City] | Rentastic Homes",
-  description: "Fully furnished, secure, thoughtfully managed PG for girls. Ansh Rentastic Girls PG & Rentastic Girls Satellite — your home away from home.",
+  title: "#1 PG for Girls in Ahmedabad | Rentastic Homes",
+  description: "Fully furnished, secure, thoughtfully managed PG for girls in Ahmedabad. Ansh Rentastic Girls PG & Rentastic Girls Satellite — your home away from home.",
 };
 
 const properties: Property[] = [
   {
     id:              "ansh-girls",
-    name:            "Ansh Rentastic Girls PG",
-    description:     "Spacious, fully furnished rooms with premium amenities. A safe and welcoming community designed exclusively for women.",
+    name:            "Rentastic Homes Ansh Girls",
+    description:     "Spacious, fully furnished rooms with premium amenities. A safe and welcoming community designed exclusively for women at Navrangpura.",
     badge:           "Limited Seats Available",
     href:            "/property/ansh-rentastic-girls-pg",
     whatsappNumber:  "918282823372",
     imageSrc:        "https://lh3.googleusercontent.com/aida-public/AB6AXuDJFSnFXF_4FTemJnG6wdS9rUF55gneL5XyFAkwZodzJ7u9tyQFtauvN9J0CD20DRnNoq_VYaZsakd4xgKo7F1Zgv9Rf8Adwsp3LeaxIm9xCNDoNMt1dGm7lnSQDTN63wsQoBcsaGuquNbNa2gdU8EiBuNGpiJtkTs5jWAWpDTjJTQsLcCktskQXcmNPxTDR1W0xeQRvncLTR8ugxwJgoSatRlRtmzLKhFh6KRbOAwykMpPXmrpYbvVx7VaIpgzTUDJtFULGG7QX7m6",
-    imageAlt:        "Twin-sharing bedroom in a premium girls PG",
+    imageAlt:        "Premium bedroom in Rentastic Homes Ansh Girls PG",
   },
   {
     id:              "satellite-girls",
-    name:            "Rentastic Girls Satellite",
-    description:     "Our Satellite location — premium single and twin rooms in a prime area, offering top-notch safety and modern amenities.",
+    name:            "Rentastic Homes Girls Satellite",
+    description:     "Premium 3 & 4-sharing AC rooms at Satellite location. Starting from ₹11,000/month with world-class safety and amenities.",
     badge:           "Limited Seats Available",
     href:            "/property/rentastic-girls-satellite",
     whatsappNumber:  "918511671066",
     imageSrc:        "https://lh3.googleusercontent.com/aida-public/AB6AXuDX2eY9GdvMpDbpti95Wp_MftqfNM1CcxLXGDyp9GARQ1ZTd4zAeBmHxt-jI-otOK6v1Z3vp0rfNPd-c7yPztQsN51neeDMq9ujwruK38LVuLllHvCc0b6PHgJCThk2W4WLndKk9JbmQhgjd4dOSUGQj8dLzxvgZpFrzwFioV2ISTHpNzxU_8a4eoJSiH4kakLBqRwONXBRc7RwxmLHEEkKabuKQKTeSytMJlBBFjXqmzgnJ0FvhyRQOEYK_d9PTuUeOw7v4x6ZPPov",
-    imageAlt:        "Single occupancy room in Rentastic Girls Satellite",
-  },
-  {
-    id:              "oasis",
-    name:            "Oasis Co-living",
-    description:     "Vibrant community space with multi-sharing options and excellent communal facilities — perfect for first-time PG residents.",
-    badge:           "Limited Seats Available",
-    href:            "/property/oasis-co-living",
-    whatsappNumber:  "918282823372",
-    imageSrc:        "https://lh3.googleusercontent.com/aida-public/AB6AXuBqg1HWtaXaeYOMnyGh701umAJ1ZwbnOP3sU790XYR4HdUTdCk5-r8qZDRq5FVqKxCZpJi7v3Aon_VS22x8Z0tzAYafMPzZxtwaiddOSy7x0zQbt7kYlj90AqE2WvJ2uHPtMOPYfCVT8jx7Dtcld-OnN8dcEoOvv14TGUbRQz-7SYiUe9UlCtOsrM1C5JCUZl_b7plT62Prz_QYpiEFwe3XzGpcjwkjiEFhkDBDZjSpTBAQJ0WG1pOfxsoDG0Faxx0MWD1vGpWKcz8Y",
-    imageAlt:        "Communal lounge area in girls co-living space",
+    imageAlt:        "Bedroom in Rentastic Homes Girls Satellite",
   },
 ];
 

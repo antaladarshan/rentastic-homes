@@ -58,7 +58,7 @@ export default function PgForGirlsPage() {
   return (
     <>
       <ListingHero
-        title="#1 PG for Girls in [City]"
+        title="#1 PG for Girls in Ahmedabad"
         subtitle="Fully furnished, secure, thoughtfully managed living. Experience a home away from home designed for comfort and peace of mind."
         imageSrc="https://lh3.googleusercontent.com/aida-public/AB6AXuB_Q6J0ZSBzXsg4-k_dHjlYGo6KIVGgrzMypu3FaFoNJ7-3KqYx-6mkGazVgJVYedWRmDGnXtUWA80fLl8BIkhKbyKIf90W0il-owI5H96k14P8p1buTdmOsrCWjC9xiEthVp2k_gTVzImuG1Y7u4K45EKu5gLq7TGZjIQOSTeeUhovU-iq2SZblgfa5NIccbqrBObAi-7cBDR4tpBq9biYqRPxAHLyJPCFpx29oUyXKsPhT2V0fSqg7n3vorsOTtuJyJmqGz2DwgGl"
         imageAlt="Bright modern co-living space for women"

@@ -1,0 +1,8 @@
+Drop your logo files here:
+  - logo.png        (used in nav bar, ~300x72px, transparent background)
+  - logo-light.png  (white/light version for the dark footer, same size)
+  - favicon.ico     (32x32 browser tab icon)
+  - apple-icon.png  (180x180 Apple touch icon)
+
+Then copy favicon.ico and apple-icon.png into src/app/ as well so Next.js
+auto-serves them as route-level metadata icons.

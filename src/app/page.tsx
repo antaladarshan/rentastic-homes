@@ -3,6 +3,8 @@ import Hero        from "@/components/sections/Hero";
 import Stats       from "@/components/sections/Stats";
 import ValueProp   from "@/components/sections/ValueProp";
 import Testimonial from "@/components/sections/Testimonial";
+import Reviews     from "@/components/sections/Reviews";
+import TrustBadges from "@/components/sections/TrustBadges";
 import WhatsAppFab from "@/components/ui/WhatsAppFab";
 
 export const metadata: Metadata = {
@@ -18,6 +20,8 @@ export default function HomePage() {
       <Stats />
       <ValueProp />
       <Testimonial />
+      <Reviews />
+      <TrustBadges />
       <WhatsAppFab />
     </>
   );

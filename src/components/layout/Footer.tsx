@@ -1,6 +1,38 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
-import { Mail, Phone, Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
+import { Mail, Phone, Instagram, Facebook, Youtube, Linkedin, Send } from "lucide-react";
 import { siteConfig } from "@/config/site";
+
+function NewsletterSignup() {
+  const [email, setEmail] = useState("");
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // TODO: swap to Mailchimp/Formspree for a real list
+    window.open(`mailto:${siteConfig.email}?subject=Newsletter Subscription&body=Please subscribe me: ${email}`, "_blank");
+    setEmail("");
+  };
+  return (
+    <form onSubmit={handleSubmit} className="flex gap-xs mt-sm">
+      <input
+        type="email"
+        required
+        placeholder="Your email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        className="flex-1 min-w-0 px-md py-xs rounded-lg bg-surface-variant/10 border border-surface-variant/20 text-primary-fixed text-body-sm placeholder:text-surface-variant/50 focus:outline-none focus:ring-1 focus:ring-primary-fixed/30"
+      />
+      <button
+        type="submit"
+        className="shrink-0 w-9 h-9 rounded-lg bg-primary-fixed text-inverse-surface flex items-center justify-center hover:opacity-90 transition-opacity"
+        aria-label="Subscribe"
+      >
+        <Send size={15} />
+      </button>
+    </form>
+  );
+}
 
 export default function Footer() {
   return (
@@ -13,7 +45,9 @@ export default function Footer() {
           <p className="text-body-sm text-surface-variant/80 mt-2 max-w-[220px] leading-relaxed">
             Premium student living designed for comfort, community, and peace of mind.
           </p>
-          <div className="flex gap-sm mt-2">
+          <p className="text-body-sm text-surface-variant/70 mt-3">Get student living tips:</p>
+          <NewsletterSignup />
+          <div className="flex gap-sm mt-3">
             {[
               { icon: <Instagram size={16} />, href: siteConfig.socials.instagram, label: "Instagram" },
               { icon: <Facebook  size={16} />, href: siteConfig.socials.facebook,  label: "Facebook"  },
@@ -32,11 +66,11 @@ export default function Footer() {
         <div className="flex flex-col gap-sm">
           <h4 className="text-body-md font-semibold text-primary-fixed mb-2">Quick Links</h4>
           {[
-            { label: "Home",      href: "/" },
-            { label: "About Us",  href: "/about" },
-            { label: "PG for Girls", href: "/pg-for-girls" },
-            { label: "City Guide",href: "/city-guide" },
-            { label: "Contact",   href: "/contact" },
+            { label: "Home",       href: "/" },
+            { label: "About Us",   href: "/about" },
+            { label: "Blog",       href: "/blog" },
+            { label: "City Guide", href: "/city-guide" },
+            { label: "Contact",    href: "/contact" },
           ].map((l) => (
             <Link key={l.href} href={l.href}
               className="text-body-sm text-surface-variant/80 hover:text-primary-fixed-dim transition-colors">

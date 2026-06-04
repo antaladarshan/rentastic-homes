@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import FloatingNav from "@/components/layout/FloatingNav";
 import Footer from "@/components/layout/Footer";
+import MobileActionBar from "@/components/ui/MobileActionBar";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,6 +17,10 @@ export const metadata: Metadata = {
   title: { default: "Rentastic Homes — Checked In, Worries Out!", template: "%s | Rentastic Homes" },
   description: "Premium PG & co-living for students and young professionals. Safe, managed, and fully furnished.",
   openGraph: { title: "Rentastic Homes", description: "Checked In, Worries Out!", locale: "en_IN", type: "website" },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -25,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <FloatingNav />
         <main className="flex-1">{children}</main>
         <Footer />
+        <MobileActionBar />
       </body>
     </html>
   );

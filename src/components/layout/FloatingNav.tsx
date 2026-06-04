@@ -9,6 +9,7 @@ import MegaMenu from "@/components/ui/MegaMenu";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Blog", href: "/blog" },
   { label: "City Guide", href: "/city-guide" },
   { label: "Contact", href: "/contact" },
 ];

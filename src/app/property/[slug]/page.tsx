@@ -2,12 +2,15 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { MapPin, Heart, Star, Users } from "lucide-react";
 import { propertiesData } from "@/data/properties";
-import Gallery           from "@/components/property/Gallery";
-import RoomCards         from "@/components/property/RoomCards";
-import AmenityTabs       from "@/components/property/AmenityTabs";
-import PoliciesAccordion from "@/components/property/PoliciesAccordion";
-import SidebarForm       from "@/components/property/SidebarForm";
-import WhatsAppFab       from "@/components/ui/WhatsAppFab";
+import Gallery            from "@/components/property/Gallery";
+import RoomCards          from "@/components/property/RoomCards";
+import AmenityTabs        from "@/components/property/AmenityTabs";
+import PoliciesAccordion  from "@/components/property/PoliciesAccordion";
+import SidebarForm        from "@/components/property/SidebarForm";
+import PropertyMap        from "@/components/property/PropertyMap";
+import ScheduleVisitForm  from "@/components/ui/ScheduleVisitForm";
+import TrustBadges        from "@/components/sections/TrustBadges";
+import WhatsAppFab        from "@/components/ui/WhatsAppFab";
 
 export function generateStaticParams() {
   return propertiesData.map((p) => ({ slug: p.slug }));
@@ -107,22 +110,34 @@ export default async function PropertyPage({ params }: { params: Promise<{ slug:
               propertyAmenities={property.propertyAmenities}
             />
 
+            {/* Map */}
+            <PropertyMap address={property.address} name={property.name} />
+
             {/* Policies */}
             <PoliciesAccordion policies={property.policies} />
           </div>
 
           {/* ── Right column (sticky sidebar) ── */}
           <div className="lg:col-span-4">
-            <div className="sticky top-24">
-              <SidebarForm
+            <div className="sticky top-24 flex flex-col gap-lg">
+              <div id="enquire">
+                <SidebarForm
+                  propertyName={property.name}
+                  sharingTypes={property.sharingTypes}
+                  whatsappNumber={property.whatsappNumber}
+                />
+              </div>
+              <ScheduleVisitForm
                 propertyName={property.name}
-                sharingTypes={property.sharingTypes}
                 whatsappNumber={property.whatsappNumber}
               />
             </div>
           </div>
 
         </div>
+
+        {/* Trust badges */}
+        <TrustBadges />
       </main>
 
       <WhatsAppFab />

@@ -48,12 +48,21 @@ export default function FloatingNav() {
     >
       <nav className="max-w-container-max mx-auto px-gutter h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link
-          href="/"
-          className="text-headline-sm font-bold text-primary shrink-0 hover:text-primary-container transition-colors"
-        >
-          Rentastic Homes
-        </Link>
+        <a href="/" className="flex items-center shrink-0">
+          <div className="relative rentastic-logo inline-block h-10 md:h-11 lg:h-12">
+            <img
+              src="/navbar-logo.png"
+              alt="Rentastic Homes"
+              className="h-full w-auto object-contain logo-dark"
+            />
+            <img
+              src="/navbar-logo-glow.png"
+              alt=""
+              aria-hidden="true"
+              className="absolute top-0 left-0 h-full w-auto object-contain logo-glow"
+            />
+          </div>
+        </a>
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center gap-lg">

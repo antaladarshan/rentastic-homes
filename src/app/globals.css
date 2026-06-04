@@ -115,3 +115,27 @@ body { background-color: #fff8f5; color: #2b1706;
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: #d6c3b2; border-radius: 10px; }
+
+/* ── Rentastic logo breathe animation ───────────────────────── */
+.rentastic-logo .logo-glow {
+  opacity: 0;
+  animation: logoBreathe 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes logoBreathe {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: translateY(-1px) scale(1.01);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rentastic-logo .logo-glow {
+    animation: none;
+  }
+}

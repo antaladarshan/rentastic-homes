@@ -29,12 +29,62 @@ export interface PropertyData {
   gender:             "girls" | "boys";
 }
 
-const GALLERY = [
-  { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCZKk6PKXFvq9vAxl4k3od7RM85tBG_hjh-Aya87inic3AH789jmquHtRgvwpFUSwDZXproavwVVelh_QqczgBATyOhrRqGIswPffMwW0yFjwHGRx7Spfhp-uPKNcm0m_KvEFMWi9y7dm8Qo8Nv5QDE8frDUrQLygcJeCqNH1VfONXzS1GxFuog1BAxp80182lERkxpH5JHo25Nxea-3T2U1fghGQHvHd-GMzmw0MJRohf39HZ603RfFRihyXXN9KIkI5bA4XGvtW-k", alt: "Premium bedroom" },
-  { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCMfLZ75EVdTYWgPSIrXQk7abrLJfieO5RdKn7Nb1KFQ1vvduwYYh0_uQSFMua3nUYt2wq6hCJXBkwThCu-qtowi2nV-CVIORXmBWMoJk_hXfAWzyoSywwafczu_HEBe0gZUguUxAOM_btJ7-ggvpV_v-_H13XdeEmP-hMwx354O2XC7qNQDXBnFEqHr5PVhTjTYFG9s-mF2Uq_MW4rUltB4OhzZe469fPJa1Xs4-4fbty8OTAlzZQFNnwrUrdr0kv21C4ClfxQKN4y", alt: "Co-living lounge" },
-  { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCIdlLjcTKLHNWLGq_ibel4c9cVhFdrOuIGTpGu8mBnYm_VsusZL1WktNE08UtktIT9X1nob9izQExvox2TjMij8FldTCDxBbCmm3q_k5KvCqEgCKbWfJFmJjbp55eexaWkfcap82oyNrgz9ryVXe3eLs7DHZDZqW3nZoE4M09JElNem2GnGVlnY6svthLq-aW-aeFD_bjyy8nmypcX6Hq7Hy4NaatZzmGRf_mHcO1ClUqYC7TJp0sFy1_fYobCwk0WWyuoUNRaPZ6h", alt: "Modern kitchen" },
-  { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBJB7lkDie9YUQPn95VrDEbxHF2K-Oc2J6-57Szr_oSL8CXPbH3hOM0S3wWuyDzosPOpvw5GOT4WhAJjLJzOGMWqp5v7QTJ71UsG1IH5AX2248pI0gr-zK8EiQoWqb039KxbPAqQaSfY3XvmHFhjR_AFf47vC8-T3C80hDIcJeBZCFmS8sI18id2FqscNdkKFPmWYzS4ZnvPioVJ0FWeawLPcupEaBl6oSO5L6TaIT3YnCy7YGzWnzOX1-BWgvJ9rtj0KYdO8fMOVtP", alt: "Study area" },
-  { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBXxralYpZrElnWEe11jnS6Z9cDmt0ZWaLQPSlG0JMBZWxnjkIPDFzNp3705TMVfjtzWMIozO9j7miQv7WaoMsO4G6Av6--uBqV78ibsYas1dVxi1YBY1zXXr_OYH9nAycaD_t3zSc62D5lFePm-X_KSYFX8nyUJabNj2ixHGrqvLY9Z8wsNyL8tVUEsdsgkEsVnPdf3IDQuYiGpe2VmFIbBzoh-KJf4QolgjO-fXrKltL3kEF-g9FTnKeGKQeUa28yeIQr5Oo7bY8V", alt: "Building exterior" },
+// ── Per-property gallery arrays ──────────────────────────────────────────────
+
+const GALLERY_SATELLITE = [
+  { src: "/properties/satellite/4-sharing-01.jpg",  alt: "AC room with curtains, Satellite" },
+  { src: "/properties/satellite/3-sharing-01.jpg",  alt: "3-sharing room, Satellite" },
+  { src: "/properties/satellite/kitchen-01.jpg",    alt: "Kitchen area, Satellite" },
+  { src: "/properties/satellite/common-01.jpg",     alt: "Common area, Satellite" },
+  { src: "/properties/satellite/balcony-01.jpg",    alt: "Balcony view, Satellite" },
+  { src: "/properties/satellite/3-sharing-02.jpg",  alt: "3-sharing room interior, Satellite" },
+  { src: "/properties/satellite/4-sharing-02.jpg",  alt: "4-sharing room, Satellite" },
+  { src: "/properties/satellite/4-sharing-03.jpg",  alt: "4-sharing room view, Satellite" },
+  { src: "/properties/satellite/4-sharing-04.jpg",  alt: "4-sharing room angle, Satellite" },
+  { src: "/properties/satellite/common-02.jpg",     alt: "Common area 2, Satellite" },
+  { src: "/properties/satellite/common-03.jpg",     alt: "Hall area, Satellite" },
+  { src: "/properties/satellite/common-04.jpg",     alt: "Dining area, Satellite" },
+];
+
+const GALLERY_ANSH_GIRLS = [
+  { src: "/properties/ansh/wp-04.jpg",  alt: "Resident in her room, Ansh Girls PG" },
+  { src: "/properties/ansh/vc-05.jpg",  alt: "Common area, Ansh" },
+  { src: "/properties/ansh/wp-02.jpg",  alt: "Room interior, Ansh" },
+  { src: "/properties/ansh/vc-07.jpg",  alt: "Study zone, Ansh" },
+  { src: "/properties/ansh/wp-05.jpg",  alt: "Resident relaxing, Ansh Girls PG" },
+  { src: "/properties/ansh/wp-06.jpg",  alt: "Room, Ansh" },
+  { src: "/properties/ansh/vc-01.jpg",  alt: "Common area lifestyle, Ansh" },
+  { src: "/properties/ansh/vc-03.jpg",  alt: "Hangout space, Ansh" },
+  { src: "/properties/ansh/vc-09.jpg",  alt: "Room, Ansh" },
+  { src: "/properties/ansh/vc-11.jpg",  alt: "Common zone, Ansh" },
+];
+
+const GALLERY_ANSH_BOYS = [
+  { src: "/properties/ansh/vc-05.jpg",  alt: "Common area, Ansh Boys PG" },
+  { src: "/properties/ansh/wp-01.jpg",  alt: "Room with residents, Ansh Boys PG" },
+  { src: "/properties/ansh/vc-01.jpg",  alt: "Lifestyle, Ansh" },
+  { src: "/properties/ansh/wp-03.jpg",  alt: "Room interior, Ansh" },
+  { src: "/properties/ansh/wp-09.jpg",  alt: "Room, Ansh" },
+  { src: "/properties/ansh/wp-07.jpg",  alt: "Room angle, Ansh" },
+  { src: "/properties/ansh/vc-02.jpg",  alt: "Common space, Ansh" },
+  { src: "/properties/ansh/vc-08.jpg",  alt: "Study / work zone, Ansh" },
+  { src: "/properties/ansh/vc-10.jpg",  alt: "Hangout area, Ansh" },
+  { src: "/properties/ansh/vc-11.jpg",  alt: "Common zone, Ansh" },
+];
+
+const GALLERY_GURUKUL = [
+  { src: "/properties/gurukul/lifestyle-05.jpg", alt: "Study zone, Gurukul" },
+  { src: "/properties/gurukul/room-08.jpg",      alt: "Room overview, Gurukul" },
+  { src: "/properties/gurukul/lifestyle-03.jpg", alt: "Common area, Gurukul" },
+  { src: "/properties/gurukul/room-10.jpg",      alt: "Room, Gurukul" },
+  { src: "/properties/gurukul/lifestyle-01.jpg", alt: "Hangout zone, Gurukul" },
+  { src: "/properties/gurukul/room-01.jpg",      alt: "Room interior, Gurukul" },
+  { src: "/properties/gurukul/room-02.jpg",      alt: "Room, Gurukul" },
+  { src: "/properties/gurukul/room-06.jpg",      alt: "Sharing room, Gurukul" },
+  { src: "/properties/gurukul/room-03.jpg",      alt: "Room angle, Gurukul" },
+  { src: "/properties/gurukul/lifestyle-02.jpg", alt: "Lifestyle, Gurukul" },
+  { src: "/properties/gurukul/lifestyle-04.jpg", alt: "Common area 2, Gurukul" },
+  { src: "/properties/gurukul/room-11.jpg",      alt: "Room, Gurukul" },
 ];
 
 const TRUST_STATS = [
@@ -97,8 +147,8 @@ export const propertiesData: PropertyData[] = [
     slug:           "ansh-rentastic-girls-pg",
     name:           "Ansh Rentastic Girls PG",
     address:        "Navrangpura, Ahmedabad, Gujarat",
-    sharingTypes:   ["Single Sharing", "Double Sharing", "Triple Sharing"],
-    gallery:        GALLERY,
+    sharingTypes:   ["Single Sharing", "Double Sharing"],
+    gallery:        GALLERY_ANSH_GIRLS,
     trustStats:     TRUST_STATS,
     gender:         "girls",
     about: [
@@ -106,8 +156,8 @@ export const propertiesData: PropertyData[] = [
       "Experience seamless living with fully furnished rooms, high-speed connectivity, and dedicated study zones. Our commitment extends beyond amenities — we provide a secure, supportive environment where you can thrive academically and personally.",
     ],
     rooms: [
-      { id: "single", name: "Single Sharing Room", description: "A private sanctuary designed for comfort, focus, and ultimate peace of mind.", price: 18000, remaining: 3, imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCSyfHtGDtj_XuvboFmgs3miT3B-f9jdETHZ-WP37ZlMzW1t-HxYNokh2uBjrL07dmILxT6SU6yydQbGlYxQB0-UyB4O4CDtrwm9npcDGoqKueY-EMDPKwHoKHaI7ssK_qvKTmAZUPgUaYm0DgCMUnKp2LeUSO5dUbDlP3cR9aDCrIeRsZitj4DUe7XU_EYNDzVEcAtfvI7KsajpdxGNj9ybrTtMuRDXSm_7Jtsa1r8f-S7PcC3S34RcPT_9zYE3wRlZazlRyGj-kxH", imageAlt: "Single sharing room" },
-      { id: "double", name: "Double Sharing Room", description: "The perfect balance of social connection and personal space.", price: 14500, imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuDvODB4f6Xni9vvEUWv-294yMYwYgJ8BaIncdt3poilfM4L259951jYyTfqtb7aoY8VnF-pbTqeAh_cP5e-tjXlW4B6EINwl7KrT6i57ILCdFSeNk4fznQ_vAvCbzXoWck6UyAM2KjlWHL9VQ9F3ELMi7JWI6WNk2sgC_k868PhZZDQhVXBvA22SVIuC1mJb8BzmzhRYiHIqZEdz58GCecrVtXVjuFpur-xYzBqIyKWQuW5ZsoxXfYzWuAAQRn-L750D-5EhVj0Kd8k", imageAlt: "Double sharing room" },
+      { id: "single", name: "Single Sharing Room", description: "A private sanctuary designed for comfort, focus, and ultimate peace of mind.", price: 18000, remaining: 3, imageSrc: "/properties/ansh/wp-02.jpg", imageAlt: "Single sharing room, Ansh Girls PG" },
+      { id: "double", name: "Double Sharing Room", description: "The perfect balance of social connection and personal space.", price: 14500, imageSrc: "/properties/ansh/wp-06.jpg", imageAlt: "Double sharing room, Ansh Girls PG" },
     ],
     roomAmenities:     ROOM_AMENITIES,
     propertyAmenities: PROPERTY_AMENITIES,
@@ -117,9 +167,9 @@ export const propertiesData: PropertyData[] = [
   {
     slug:           "rentastic-girls-satellite",
     name:           "Rentastic Girls Satellite",
-    address:        "Satellite, Ahmedabad, Gujarat",
-    sharingTypes:   ["Single Sharing", "Double Sharing"],
-    gallery:        GALLERY,
+    address:        "4th Floor, Aishwarya Apartment, opp. Star Bazaar, Satellite, Ahmedabad, Gujarat 380015",
+    sharingTypes:   ["3 Sharing", "4 Sharing", "4 Sharing (Balcony)"],
+    gallery:        GALLERY_SATELLITE,
     trustStats:     TRUST_STATS,
     gender:         "girls",
     about: [
@@ -127,8 +177,9 @@ export const propertiesData: PropertyData[] = [
       "With thoughtfully designed rooms, communal study zones, and 24/7 security, you'll have everything you need to focus on what matters most.",
     ],
     rooms: [
-      { id: "single", name: "Single Sharing Room", description: "Your own private space — fully furnished with everything you need.", price: 17000, remaining: 2, imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCSyfHtGDtj_XuvboFmgs3miT3B-f9jdETHZ-WP37ZlMzW1t-HxYNokh2uBjrL07dmILxT6SU6yydQbGlYxQB0-UyB4O4CDtrwm9npcDGoqKueY-EMDPKwHoKHaI7ssK_qvKTmAZUPgUaYm0DgCMUnKp2LeUSO5dUbDlP3cR9aDCrIeRsZitj4DUe7XU_EYNDzVEcAtfvI7KsajpdxGNj9ybrTtMuRDXSm_7Jtsa1r8f-S7PcC3S34RcPT_9zYE3wRlZazlRyGj-kxH", imageAlt: "Single room at Satellite" },
-      { id: "double", name: "Double Sharing Room", description: "Spacious twin-sharing room with individual study areas and ample storage.", price: 13500, imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuDvODB4f6Xni9vvEUWv-294yMYwYgJ8BaIncdt3poilfM4L259951jYyTfqtb7aoY8VnF-pbTqeAh_cP5e-tjXlW4B6EINwl7KrT6i57ILCdFSeNk4fznQ_vAvCbzXoWck6UyAM2KjlWHL9VQ9F3ELMi7JWI6WNk2sgC_k868PhZZDQhVXBvA22SVIuC1mJb8BzmzhRYiHIqZEdz58GCecrVtXVjuFpur-xYzBqIyKWQuW5ZsoxXfYzWuAAQRn-L750D-5EhVj0Kd8k", imageAlt: "Double sharing room at Satellite" },
+      { id: "3-sharing", name: "3 Sharing Room", description: "Comfortable shared room with AC, ample storage, and a cosy feel.", price: 12500, remaining: 2, imageSrc: "/properties/satellite/3-sharing-01.jpg", imageAlt: "3-sharing room, Satellite" },
+      { id: "4-sharing", name: "4 Sharing Room", description: "Great value — spacious room with AC, wardrobe for each resident.", price: 11000, imageSrc: "/properties/satellite/4-sharing-01.jpg", imageAlt: "4-sharing room, Satellite" },
+      { id: "4-sharing-balcony", name: "4 Sharing Room (Balcony)", description: "Same as 4 sharing but with an exclusive balcony and a stunning city view.", price: 11500, imageSrc: "/properties/satellite/balcony-01.jpg", imageAlt: "4-sharing room with balcony, Satellite" },
     ],
     roomAmenities:     ROOM_AMENITIES,
     propertyAmenities: PROPERTY_AMENITIES,
@@ -138,9 +189,9 @@ export const propertiesData: PropertyData[] = [
   {
     slug:           "gurukul-road",
     name:           "Rentastic Homes Gurukul Road",
-    address:        "Gurukul, Ahmedabad, Gujarat",
+    address:        "2nd Floor, Pushti Heights, Subhash Chowk, opp. Navneet House, Gurukul, Ahmedabad, Gujarat 380052",
     sharingTypes:   ["Single Sharing", "Double Sharing", "Triple Sharing"],
-    gallery:        GALLERY,
+    gallery:        GALLERY_GURUKUL,
     trustStats:     TRUST_STATS,
     gender:         "boys",
     about: [
@@ -148,9 +199,9 @@ export const propertiesData: PropertyData[] = [
       "With spacious rooms, a dedicated study zone, 24/7 security, and nutritious daily meals — everything is in place so you can check in and focus on what matters.",
     ],
     rooms: [
-      { id: "single", name: "Single Sharing Room", description: "Maximum privacy, fully furnished — your own sanctuary.", price: 17000, remaining: 2, imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCSyfHtGDtj_XuvboFmgs3miT3B-f9jdETHZ-WP37ZlMzW1t-HxYNokh2uBjrL07dmILxT6SU6yydQbGlYxQB0-UyB4O4CDtrwm9npcDGoqKueY-EMDPKwHoKHaI7ssK_qvKTmAZUPgUaYm0DgCMUnKp2LeUSO5dUbDlP3cR9aDCrIeRsZitj4DUe7XU_EYNDzVEcAtfvI7KsajpdxGNj9ybrTtMuRDXSm_7Jtsa1r8f-S7PcC3S34RcPT_9zYE3wRlZazlRyGj-kxH", imageAlt: "Single sharing room" },
-      { id: "double", name: "Double Sharing Room", description: "Great value, great company — designed for productivity.", price: 13500, imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuDvODB4f6Xni9vvEUWv-294yMYwYgJ8BaIncdt3poilfM4L259951jYyTfqtb7aoY8VnF-pbTqeAh_cP5e-tjXlW4B6EINwl7KrT6i57ILCdFSeNk4fznQ_vAvCbzXoWck6UyAM2KjlWHL9VQ9F3ELMi7JWI6WNk2sgC_k868PhZZDQhVXBvA22SVIuC1mJb8BzmzhRYiHIqZEdz58GCecrVtXVjuFpur-xYzBqIyKWQuW5ZsoxXfYzWuAAQRn-L750D-5EhVj0Kd8k", imageAlt: "Double sharing room" },
-      { id: "triple", name: "Triple Sharing Room", description: "Affordable with all amenities — ideal for budget-conscious students.", price: 11000, imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCZKk6PKXFvq9vAxl4k3od7RM85tBG_hjh-Aya87inic3AH789jmquHtRgvwpFUSwDZXproavwVVelh_QqczgBATyOhrRqGIswPffMwW0yFjwHGRx7Spfhp-uPKNcm0m_KvEFMWi9y7dm8Qo8Nv5QDE8frDUrQLygcJeCqNH1VfONXzS1GxFuog1BAxp80182lERkxpH5JHo25Nxea-3T2U1fghGQHvHd-GMzmw0MJRohf39HZ603RfFRihyXXN9KIkI5bA4XGvtW-k", imageAlt: "Triple sharing room" },
+      { id: "single", name: "Single Sharing Room", description: "Maximum privacy, fully furnished — your own sanctuary.", price: 17000, remaining: 2, imageSrc: "/properties/gurukul/room-01.jpg", imageAlt: "Single sharing room, Gurukul" },
+      { id: "double", name: "Double Sharing Room", description: "Great value, great company — designed for productivity.", price: 13500, imageSrc: "/properties/gurukul/room-08.jpg", imageAlt: "Double sharing room, Gurukul" },
+      { id: "triple", name: "Triple Sharing Room", description: "Affordable with all amenities — ideal for budget-conscious students.", price: 11000, imageSrc: "/properties/gurukul/room-06.jpg", imageAlt: "Triple sharing room, Gurukul" },
     ],
     roomAmenities:     ROOM_AMENITIES,
     propertyAmenities: PROPERTY_AMENITIES,
@@ -162,7 +213,7 @@ export const propertiesData: PropertyData[] = [
     name:           "Rentastic Ansh Boys PG",
     address:        "Navrangpura, Ahmedabad, Gujarat",
     sharingTypes:   ["Single Sharing", "Double Sharing", "Triple Sharing"],
-    gallery:        GALLERY,
+    gallery:        GALLERY_ANSH_BOYS,
     trustStats:     TRUST_STATS,
     gender:         "boys",
     about: [
@@ -170,9 +221,9 @@ export const propertiesData: PropertyData[] = [
       "From dedicated study zones to a fully-equipped gym and nutritious daily meals — everything is designed so you can check in and leave your worries behind.",
     ],
     rooms: [
-      { id: "single", name: "Single Sharing Room", description: "Maximum privacy for maximum focus. Your own fully furnished room.", price: 16000, remaining: 2, imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCSyfHtGDtj_XuvboFmgs3miT3B-f9jdETHZ-WP37ZlMzW1t-HxYNokh2uBjrL07dmILxT6SU6yydQbGlYxQB0-UyB4O4CDtrwm9npcDGoqKueY-EMDPKwHoKHaI7ssK_qvKTmAZUPgUaYm0DgCMUnKp2LeUSO5dUbDlP3cR9aDCrIeRsZitj4DUe7XU_EYNDzVEcAtfvI7KsajpdxGNj9ybrTtMuRDXSm_7Jtsa1r8f-S7PcC3S34RcPT_9zYE3wRlZazlRyGj-kxH", imageAlt: "Single sharing room" },
-      { id: "double", name: "Double Sharing Room", description: "Great value, great company. Designed for productivity and community.", price: 12500, imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuDvODB4f6Xni9vvEUWv-294yMYwYgJ8BaIncdt3poilfM4L259951jYyTfqtb7aoY8VnF-pbTqeAh_cP5e-tjXlW4B6EINwl7KrT6i57ILCdFSeNk4fznQ_vAvCbzXoWck6UyAM2KjlWHL9VQ9F3ELMi7JWI6WNk2sgC_k868PhZZDQhVXBvA22SVIuC1mJb8BzmzhRYiHIqZEdz58GCecrVtXVjuFpur-xYzBqIyKWQuW5ZsoxXfYzWuAAQRn-L750D-5EhVj0Kd8k", imageAlt: "Double sharing room" },
-      { id: "triple", name: "Triple Sharing Room", description: "Affordable option with all amenities — ideal for budget-conscious students.", price: 10000, imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCZKk6PKXFvq9vAxl4k3od7RM85tBG_hjh-Aya87inic3AH789jmquHtRgvwpFUSwDZXproavwVVelh_QqczgBATyOhrRqGIswPffMwW0yFjwHGRx7Spfhp-uPKNcm0m_KvEFMWi9y7dm8Qo8Nv5QDE8frDUrQLygcJeCqNH1VfONXzS1GxFuog1BAxp80182lERkxpH5JHo25Nxea-3T2U1fghGQHvHd-GMzmw0MJRohf39HZ603RfFRihyXXN9KIkI5bA4XGvtW-k", imageAlt: "Triple sharing room" },
+      { id: "single", name: "Single Sharing Room", description: "Maximum privacy for maximum focus. Your own fully furnished room.", price: 16000, remaining: 2, imageSrc: "/properties/ansh/wp-01.jpg", imageAlt: "Single sharing room, Ansh Boys PG" },
+      { id: "double", name: "Double Sharing Room", description: "Great value, great company. Designed for productivity and community.", price: 12500, imageSrc: "/properties/ansh/wp-03.jpg", imageAlt: "Double sharing room, Ansh Boys PG" },
+      { id: "triple", name: "Triple Sharing Room", description: "Affordable option with all amenities — ideal for budget-conscious students.", price: 10000, imageSrc: "/properties/ansh/wp-07.jpg", imageAlt: "Triple sharing room, Ansh Boys PG" },
     ],
     roomAmenities:     ROOM_AMENITIES,
     propertyAmenities: PROPERTY_AMENITIES,

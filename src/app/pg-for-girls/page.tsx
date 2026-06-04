@@ -20,8 +20,8 @@ const properties: Property[] = [
     badge:           "Limited Seats Available",
     href:            "/property/ansh-rentastic-girls-pg",
     whatsappNumber:  "918282823372",
-    imageSrc:        "https://lh3.googleusercontent.com/aida-public/AB6AXuDJFSnFXF_4FTemJnG6wdS9rUF55gneL5XyFAkwZodzJ7u9tyQFtauvN9J0CD20DRnNoq_VYaZsakd4xgKo7F1Zgv9Rf8Adwsp3LeaxIm9xCNDoNMt1dGm7lnSQDTN63wsQoBcsaGuquNbNa2gdU8EiBuNGpiJtkTs5jWAWpDTjJTQsLcCktskQXcmNPxTDR1W0xeQRvncLTR8ugxwJgoSatRlRtmzLKhFh6KRbOAwykMpPXmrpYbvVx7VaIpgzTUDJtFULGG7QX7m6",
-    imageAlt:        "Premium bedroom in Rentastic Homes Ansh Girls PG",
+    imageSrc:        "/properties/ansh/wp-04.jpg",
+    imageAlt:        "Resident in her room at Rentastic Homes Ansh Girls PG",
   },
   {
     id:              "satellite-girls",
@@ -30,8 +30,8 @@ const properties: Property[] = [
     badge:           "Limited Seats Available",
     href:            "/property/rentastic-girls-satellite",
     whatsappNumber:  "918511671066",
-    imageSrc:        "https://lh3.googleusercontent.com/aida-public/AB6AXuDX2eY9GdvMpDbpti95Wp_MftqfNM1CcxLXGDyp9GARQ1ZTd4zAeBmHxt-jI-otOK6v1Z3vp0rfNPd-c7yPztQsN51neeDMq9ujwruK38LVuLllHvCc0b6PHgJCThk2W4WLndKk9JbmQhgjd4dOSUGQj8dLzxvgZpFrzwFioV2ISTHpNzxU_8a4eoJSiH4kakLBqRwONXBRc7RwxmLHEEkKabuKQKTeSytMJlBBFjXqmzgnJ0FvhyRQOEYK_d9PTuUeOw7v4x6ZPPov",
-    imageAlt:        "Bedroom in Rentastic Homes Girls Satellite",
+    imageSrc:        "/properties/satellite/4-sharing-01.jpg",
+    imageAlt:        "AC room at Rentastic Homes Girls Satellite",
   },
 ];
 
@@ -60,8 +60,8 @@ export default function PgForGirlsPage() {
       <ListingHero
         title="#1 PG for Girls in Ahmedabad"
         subtitle="Fully furnished, secure, thoughtfully managed living. Experience a home away from home designed for comfort and peace of mind."
-        imageSrc="https://lh3.googleusercontent.com/aida-public/AB6AXuB_Q6J0ZSBzXsg4-k_dHjlYGo6KIVGgrzMypu3FaFoNJ7-3KqYx-6mkGazVgJVYedWRmDGnXtUWA80fLl8BIkhKbyKIf90W0il-owI5H96k14P8p1buTdmOsrCWjC9xiEthVp2k_gTVzImuG1Y7u4K45EKu5gLq7TGZjIQOSTeeUhovU-iq2SZblgfa5NIccbqrBObAi-7cBDR4tpBq9biYqRPxAHLyJPCFpx29oUyXKsPhT2V0fSqg7n3vorsOTtuJyJmqGz2DwgGl"
-        imageAlt="Bright modern co-living space for women"
+        imageSrc="/properties/ansh/wp-05.jpg"
+        imageAlt="Resident at Rentastic Homes Girls PG"
         enquiryFor="PG for Girls"
       />
       <StayToggle active="girls" />

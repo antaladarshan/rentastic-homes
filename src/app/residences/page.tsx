@@ -19,9 +19,8 @@ const properties: Property[] = [
     badge: "Limited Seats Available",
     href: "/property/rentastic-ansh-boys-pg",
     whatsappNumber: siteConfig.whatsapp,
-    imageSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCM9sS6ij3sAlKXVSMWhFqF867U7U3mKeTMeO1PRfynqIq7Nx9lS96CRqEbua5uXtZKaKJk2W3YWQCZGfv_wA7srKg1RBbos515lc4eFUk9EQrxvzfzqHMlDOGlddFphdk2BWAYY2I-MtK-kI_SolRdV78nL11IX0Vt6kk7LQ3cBfxNhkKEi-y59iwW8AqepIUwVP7Nd225mAvvUxD5Kex7hgcjw4OXrLAeEmlIh86RHuJqXm90FdUETIkSNbVR1S0_0JbaFN_TJSbN",
-    imageAlt: "Modern bedroom in Rentastic Homes Ansh Residences",
+    imageSrc: "/properties/ansh/vc-05.jpg",
+    imageAlt: "Common area at Rentastic Homes Ansh Residences",
   },
   {
     id: "gurukul-residences",
@@ -30,9 +29,8 @@ const properties: Property[] = [
     badge: "Limited Seats Available",
     href: "/property/gurukul-road",
     whatsappNumber: siteConfig.whatsappGurukul,
-    imageSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDerRj5K53NV6TrCCfRJcULYvekoKBYX80tcBOFpLmB0EwP1BI-9q3P772wBh4Hi_VYx0HGZA4xPm3zPiN4bm2RMn6NIlA395I482EWGLXz3ssGJ6AgVw0dE3KyCaGvjmXMoPaB-msyNtNHk_90GIqAcLJoY7tHwYPb14kWIlGfCEmRgNZow1HtefQUoRFDcnHcHaMOeNlm8DUWBQRyxaM_Oxq39bZFQKYgW1u7PibB_8bbOC996fIydVH6uf_m3LoXYvgfO7SYWQze",
-    imageAlt: "Modern bedroom in Rentastic Homes Gurukul Residences",
+    imageSrc: "/properties/gurukul/lifestyle-05.jpg",
+    imageAlt: "Study zone at Rentastic Homes Gurukul Residences",
   },
 ];
 

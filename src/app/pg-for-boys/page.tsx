@@ -20,8 +20,8 @@ const properties: Property[] = [
     badge:          "Limited Seats Available",
     href:           "/property/rentastic-ansh-boys-pg",
     whatsappNumber: "918282823372",
-    imageSrc:       "https://lh3.googleusercontent.com/aida-public/AB6AXuCM9sS6ij3sAlKXVSMWhFqF867U7U3mKeTMeO1PRfynqIq7Nx9lS96CRqEbua5uXtZKaKJk2W3YWQCZGfv_wA7srKg1RBbos515lc4eFUk9EQrxvzfzqHMlDOGlddFphdk2BWAYY2I-MtK-kI_SolRdV78nL11IX0Vt6kk7LQ3cBfxNhkKEi-y59iwW8AqepIUwVP7Nd225mAvvUxD5Kex7hgcjw4OXrLAeEmlIh86RHuJqXm90FdUETIkSNbVR1S0_0JbaFN_TJSbN",
-    imageAlt:       "Premium bedroom in Rentastic Homes Ansh Boys PG",
+    imageSrc:       "/properties/ansh/vc-05.jpg",
+    imageAlt:       "Common area at Rentastic Homes Ansh Boys PG",
   },
   {
     id:             "gurukul-boys",
@@ -30,8 +30,8 @@ const properties: Property[] = [
     badge:          "Limited Seats Available",
     href:           "/property/gurukul-road",
     whatsappNumber:  "917359678751",
-    imageSrc:       "https://lh3.googleusercontent.com/aida-public/AB6AXuDerRj5K53NV6TrCCfRJcULYvekoKBYX80tcBOFpLmB0EwP1BI-9q3P772wBh4Hi_VYx0HGZA4xPm3zPiN4bm2RMn6NIlA395I482EWGLXz3ssGJ6AgVw0dE3KyCaGvjmXMoPaB-msyNtNHk_90GIqAcLJoY7tHwYPb14kWIlGfCEmRgNZow1HtefQUoRFDcnHcHaMOeNlm8DUWBQRyxaM_Oxq39bZFQKYgW1u7PibB_8bbOC996fIydVH6uf_m3LoXYvgfO7SYWQze",
-    imageAlt:       "Modern bedroom in Rentastic Homes Gurukul Road",
+    imageSrc:       "/properties/gurukul/lifestyle-05.jpg",
+    imageAlt:       "Study zone at Rentastic Homes Gurukul Road",
   },
 ];
 
@@ -59,8 +59,8 @@ export default function PgForBoysPage() {
       <ListingHero
         title="Premium PG for Boys in Ahmedabad"
         subtitle="Fully furnished, secure, thoughtfully managed living for male students and professionals at Navrangpura and Gurukul Road."
-        imageSrc="https://lh3.googleusercontent.com/aida-public/AB6AXuCM9sS6ij3sAlKXVSMWhFqF867U7U3mKeTMeO1PRfynqIq7Nx9lS96CRqEbua5uXtZKaKJk2W3YWQCZGfv_wA7srKg1RBbos515lc4eFUk9EQrxvzfzqHMlDOGlddFphdk2BWAYY2I-MtK-kI_SolRdV78nL11IX0Vt6kk7LQ3cBfxNhkKEi-y59iwW8AqepIUwVP7Nd225mAvvUxD5Kex7hgcjw4OXrLAeEmlIh86RHuJqXm90FdUETIkSNbVR1S0_0JbaFN_TJSbN"
-        imageAlt="Male students in a stylish modern co-living lounge"
+        imageSrc="/properties/ansh/vc-05.jpg"
+        imageAlt="Common area at Rentastic Homes Boys PG"
         enquiryFor="PG for Boys"
       />
       <StayToggle active="boys" />

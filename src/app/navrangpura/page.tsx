@@ -20,8 +20,7 @@ const properties: Property[] = [
     badge: "Limited Seats Available",
     href: "/property/ansh-rentastic-girls-pg",
     whatsappNumber: siteConfig.whatsapp,
-    imageSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDJFSnFXF_4FTemJnG6wdS9rUF55gneL5XyFAkwZodzJ7u9tyQFtauvN9J0CD20DRnNoq_VYaZsakd4xgKo7F1Zgv9Rf8Adwsp3LeaxIm9xCNDoNMt1dGm7lnSQDTN63wsQoBcsaGuquNbNa2gdU8EiBuNGpiJtkTs5jWAWpDTjJTQsLcCktskQXcmNPxTDR1W0xeQRvncLTR8ugxwJgoSatRlRtmzLKhFh6KRbOAwykMpPXmrpYbvVx7VaIpgzTUDJtFULGG7QX7m6",
+    imageSrc: "/properties/ansh/wp-04.jpg",
     imageAlt: "Rentastic Homes Ansh Girls PG",
   },
   {
@@ -31,8 +30,7 @@ const properties: Property[] = [
     badge: "Limited Seats Available",
     href: "/property/rentastic-ansh-boys-pg",
     whatsappNumber: siteConfig.whatsapp,
-    imageSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCM9sS6ij3sAlKXVSMWhFqF867U7U3mKeTMeO1PRfynqIq7Nx9lS96CRqEbua5uXtZKaKJk2W3YWQCZGfv_wA7srKg1RBbos515lc4eFUk9EQrxvzfzqHMlDOGlddFphdk2BWAYY2I-MtK-kI_SolRdV78nL11IX0Vt6kk7LQ3cBfxNhkKEi-y59iwW8AqepIUwVP7Nd225mAvvUxD5Kex7hgcjw4OXrLAeEmlIh86RHuJqXm90FdUETIkSNbVR1S0_0JbaFN_TJSbN",
+    imageSrc: "/properties/ansh/vc-05.jpg",
     imageAlt: "Rentastic Homes Ansh Boys PG",
   },
 ];

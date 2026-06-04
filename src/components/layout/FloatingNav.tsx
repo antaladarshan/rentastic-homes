@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
@@ -50,16 +51,22 @@ export default function FloatingNav() {
         {/* Logo */}
         <a href="/" className="flex items-center shrink-0">
           <div className="relative rentastic-logo inline-block h-10 md:h-11 lg:h-12">
-            <img
+            <Image
               src="/navbar-logo.png"
               alt="Rentastic Homes"
+              width={160}
+              height={48}
               className="h-full w-auto object-contain logo-dark"
+              style={{ height: "100%", width: "auto" }}
             />
-            <img
+            <Image
               src="/navbar-logo-glow.png"
               alt=""
               aria-hidden="true"
+              width={160}
+              height={48}
               className="absolute top-0 left-0 h-full w-auto object-contain logo-glow"
+              style={{ height: "100%", width: "auto" }}
             />
           </div>
         </a>

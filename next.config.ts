@@ -3,6 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export",
   basePath: "/rentastic-homes",
+  env: {
+    NEXT_PUBLIC_BASE_PATH: "/rentastic-homes",
+  },
   images: {
     unoptimized: true,
     remotePatterns: [

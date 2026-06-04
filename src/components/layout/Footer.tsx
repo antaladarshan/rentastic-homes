@@ -49,9 +49,9 @@ export default function Footer() {
         <div className="flex flex-col gap-sm">
           <h4 className="text-body-md font-semibold text-primary-fixed mb-2">Property Lists</h4>
           {[
-            { label: "PG for Girls",   href: "/pg-for-girls" },
-            { label: "PG for Boys",    href: "/pg-for-boys" },
-            { label: "PG for Boys",  href: "/pg-for-boys" },
+            { label: "PG for Girls",  href: "/pg-for-girls" },
+            { label: "PG for Boys",   href: "/pg-for-boys" },
+            { label: "Navrangpura",   href: "/navrangpura" },
           ].map((l) => (
             <Link key={l.href} href={l.href}
               className="text-body-sm text-surface-variant/80 hover:text-primary-fixed-dim transition-colors">

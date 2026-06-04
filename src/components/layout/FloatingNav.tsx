@@ -52,13 +52,13 @@ export default function FloatingNav() {
           <div className="relative rentastic-logo inline-block h-10 md:h-11 lg:h-12">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/navbar-logo.png`}
+              src="/navbar-logo.png"
               alt="Rentastic Homes"
               className="h-full w-auto object-contain logo-dark"
             />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/navbar-logo-glow.png`}
+              src="/navbar-logo-glow.png"
               alt=""
               aria-hidden="true"
               className="absolute top-0 left-0 h-full w-auto object-contain logo-glow"

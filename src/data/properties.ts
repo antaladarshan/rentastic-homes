@@ -136,6 +136,28 @@ export const propertiesData: PropertyData[] = [
     whatsappNumber:    "918511671066",
   },
   {
+    slug:           "gurukul-road",
+    name:           "Rentastic Homes Gurukul Road",
+    address:        "Gurukul, Ahmedabad, Gujarat",
+    sharingTypes:   ["Single Sharing", "Double Sharing", "Triple Sharing"],
+    gallery:        GALLERY,
+    trustStats:     TRUST_STATS,
+    gender:         "boys",
+    about: [
+      "Rentastic Homes Gurukul Road is our premium co-living residence in one of Ahmedabad's most vibrant educational corridors. Purpose-built for male students and working professionals who want a managed, comfortable, and connected lifestyle.",
+      "With spacious rooms, a dedicated study zone, 24/7 security, and nutritious daily meals — everything is in place so you can check in and focus on what matters.",
+    ],
+    rooms: [
+      { id: "single", name: "Single Sharing Room", description: "Maximum privacy, fully furnished — your own sanctuary.", price: 17000, remaining: 2, imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCSyfHtGDtj_XuvboFmgs3miT3B-f9jdETHZ-WP37ZlMzW1t-HxYNokh2uBjrL07dmILxT6SU6yydQbGlYxQB0-UyB4O4CDtrwm9npcDGoqKueY-EMDPKwHoKHaI7ssK_qvKTmAZUPgUaYm0DgCMUnKp2LeUSO5dUbDlP3cR9aDCrIeRsZitj4DUe7XU_EYNDzVEcAtfvI7KsajpdxGNj9ybrTtMuRDXSm_7Jtsa1r8f-S7PcC3S34RcPT_9zYE3wRlZazlRyGj-kxH", imageAlt: "Single sharing room" },
+      { id: "double", name: "Double Sharing Room", description: "Great value, great company — designed for productivity.", price: 13500, imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuDvODB4f6Xni9vvEUWv-294yMYwYgJ8BaIncdt3poilfM4L259951jYyTfqtb7aoY8VnF-pbTqeAh_cP5e-tjXlW4B6EINwl7KrT6i57ILCdFSeNk4fznQ_vAvCbzXoWck6UyAM2KjlWHL9VQ9F3ELMi7JWI6WNk2sgC_k868PhZZDQhVXBvA22SVIuC1mJb8BzmzhRYiHIqZEdz58GCecrVtXVjuFpur-xYzBqIyKWQuW5ZsoxXfYzWuAAQRn-L750D-5EhVj0Kd8k", imageAlt: "Double sharing room" },
+      { id: "triple", name: "Triple Sharing Room", description: "Affordable with all amenities — ideal for budget-conscious students.", price: 11000, imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCZKk6PKXFvq9vAxl4k3od7RM85tBG_hjh-Aya87inic3AH789jmquHtRgvwpFUSwDZXproavwVVelh_QqczgBATyOhrRqGIswPffMwW0yFjwHGRx7Spfhp-uPKNcm0m_KvEFMWi9y7dm8Qo8Nv5QDE8frDUrQLygcJeCqNH1VfONXzS1GxFuog1BAxp80182lERkxpH5JHo25Nxea-3T2U1fghGQHvHd-GMzmw0MJRohf39HZ603RfFRihyXXN9KIkI5bA4XGvtW-k", imageAlt: "Triple sharing room" },
+    ],
+    roomAmenities:     ROOM_AMENITIES,
+    propertyAmenities: PROPERTY_AMENITIES,
+    policies:          POLICIES,
+    whatsappNumber:    "917359678751",
+  },
+  {
     slug:           "rentastic-ansh-boys-pg",
     name:           "Rentastic Ansh Boys PG",
     address:        "Navrangpura, Ahmedabad, Gujarat",

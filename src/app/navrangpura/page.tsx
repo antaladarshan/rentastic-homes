@@ -14,37 +14,26 @@ export const metadata: Metadata = {
 
 const properties: Property[] = [
   {
-    id: "haven-residency",
-    name: "The Haven Residency",
-    description: "Premium single and twin sharing rooms with modern amenities. A comfortable community designed for students.",
+    id: "ansh-girls",
+    name: "Rentastic Homes Ansh Girls",
+    description: "Fully furnished, secure girls PG at Navrangpura. Meals, Wi-Fi, and 24/7 security included. Starting ₹9,000/month.",
     badge: "Limited Seats Available",
-    href: "/property/haven-residency",
+    href: "/property/ansh-rentastic-girls-pg",
     whatsappNumber: siteConfig.whatsapp,
     imageSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCtJk8QI8SMGaCx45K78wrvh_GSh4Oaev81yCyy1wRIQFZmM_g3_lCn90lt013ZkjyJRVhBFhkXcWMUqSWJ58sCuhBmTUARuIAuZic2BQ4dvNTZAaCCdkgSU8qz_rwzU6tP1FNoHN9nMQk1JHeFYXA2AcWDqNJlEhWB8GnO572B24F5WJQ2jMqAVOIjP9SyLDUQ1WPrDNsuuYxvBABic8b-RUiOM_GKGGxEoFl94J23xoQILYGSW7XW3poA1I09CvOMOk1lZpy-Atbi",
-    imageAlt: "The Haven Residency interior",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDJFSnFXF_4FTemJnG6wdS9rUF55gneL5XyFAkwZodzJ7u9tyQFtauvN9J0CD20DRnNoq_VYaZsakd4xgKo7F1Zgv9Rf8Adwsp3LeaxIm9xCNDoNMt1dGm7lnSQDTN63wsQoBcsaGuquNbNa2gdU8EiBuNGpiJtkTs5jWAWpDTjJTQsLcCktskQXcmNPxTDR1W0xeQRvncLTR8ugxwJgoSatRlRtmzLKhFh6KRbOAwykMpPXmrpYbvVx7VaIpgzTUDJtFULGG7QX7m6",
+    imageAlt: "Rentastic Homes Ansh Girls PG",
   },
   {
-    id: "serene-living",
-    name: "Serene Living",
-    description: "Spacious twin and multi-sharing rooms with premium amenities and excellent community spaces.",
+    id: "ansh-boys",
+    name: "Rentastic Homes Ansh Boys",
+    description: "Premium boys PG at Navrangpura with spacious furnished rooms, daily meals, and round-the-clock security. Starting ₹9,000/month.",
     badge: "Limited Seats Available",
-    href: "/property/serene-living",
+    href: "/property/rentastic-ansh-boys-pg",
     whatsappNumber: siteConfig.whatsapp,
     imageSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDEIEtrOwE76g_IAJvc0Xpg-v9EEQReH9J95AktCTH9Y_b-2BFrrIHuS-HJlitcADBlCxrVlFPXQVeY8YftXbAAj_uYRmQCJ5caz4PpIjPZh9-AJPoUjRCAJGwLbj5PhxFdoHV1uJQ90_KJU09z3PBxeSdWpZzRZa5wbgkJDilRfyU6VF_6GFhuhPyKxx2h4nY3IXBAkAGE0OliEucJrJo2LFhobwnPsbbnw8IsnCOiQCjWEbqD4gxdyQ8tTympEnegeYwYlbyKIRi_",
-    imageAlt: "Serene Living interior",
-  },
-  {
-    id: "oasis-coliving",
-    name: "Oasis Co-living",
-    description: "Vibrant community space with multi-sharing options and excellent communal facilities.",
-    badge: "Limited Seats Available",
-    href: "/property/oasis-coliving",
-    whatsappNumber: siteConfig.whatsapp,
-    imageSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA8hn--gg3Aukp0b6Tc6iQ6JorIjTn2knDbhcaJwNURmhjCAEcDl2rJdGzKwHRc6QW6fWAwWFW0ZyZjIEHR-e3ps3ORLXxLDL3pABpkx9LMRNrpwMl1B3ikYqg_kFYJQG4rP9D_PFUGcUhZnJpU-_lVeeTncZ2gwxPFw9_EXsjI8DYu0bVR4x9QCui3oyUGd0ogq5o86TIvtvrK86d_54JyBV94EtM7TOV2aYdyG0lI9gTqjFSc8fge3JXWeY8Zq6FJzfuW7t5hex2N",
-    imageAlt: "Oasis Co-living interior",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCM9sS6ij3sAlKXVSMWhFqF867U7U3mKeTMeO1PRfynqIq7Nx9lS96CRqEbua5uXtZKaKJk2W3YWQCZGfv_wA7srKg1RBbos515lc4eFUk9EQrxvzfzqHMlDOGlddFphdk2BWAYY2I-MtK-kI_SolRdV78nL11IX0Vt6kk7LQ3cBfxNhkKEi-y59iwW8AqepIUwVP7Nd225mAvvUxD5Kex7hgcjw4OXrLAeEmlIh86RHuJqXm90FdUETIkSNbVR1S0_0JbaFN_TJSbN",
+    imageAlt: "Rentastic Homes Ansh Boys PG",
   },
 ];
 

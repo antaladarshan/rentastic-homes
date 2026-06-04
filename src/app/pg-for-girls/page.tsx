@@ -64,7 +64,7 @@ export default function PgForGirlsPage() {
         imageAlt="Bright modern co-living space for women"
         enquiryFor="PG for Girls"
       />
-      <StayToggle active="students" />
+      <StayToggle active="girls" />
       <PropertyGrid properties={properties} />
       <AmenityGrid />
       <EnquiryWithFaq faqs={faqs} properties={formProperties} locations={formLocations} />

@@ -158,11 +158,6 @@ function MobilePropertiesAccordion() {
       label: "PG for Boys",
       href: "/pg-for-boys",
     },
-    {
-      id: "residences",
-      label: "Residences",
-      href: "/residences",
-    },
   ];
 
   return (

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Mail, Phone, Instagram, Facebook, Youtube, Linkedin, Send } from "lucide-react";
+import { Mail, Phone, Instagram, Send, Clock } from "lucide-react";
 import { siteConfig } from "@/config/site";
 
 function NewsletterSignup() {
@@ -47,17 +47,19 @@ export default function Footer() {
           </p>
           <p className="text-body-sm text-surface-variant/70 mt-3">Get student living tips:</p>
           <NewsletterSignup />
-          <div className="flex gap-sm mt-3">
-            {[
-              { icon: <Instagram size={16} />, href: siteConfig.socials.instagram, label: "Instagram" },
-              { icon: <Facebook  size={16} />, href: siteConfig.socials.facebook,  label: "Facebook"  },
-              { icon: <Youtube   size={16} />, href: "#",                           label: "YouTube"   },
-              { icon: <Linkedin  size={16} />, href: "#",                           label: "LinkedIn"  },
-            ].map((s) => (
-              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
-                className="w-9 h-9 rounded-full bg-surface-variant/10 flex items-center justify-center text-primary-fixed hover:bg-primary-fixed hover:text-inverse-surface transition-colors">
-                {s.icon}
-              </a>
+          <div className="flex gap-sm mt-3 flex-wrap">
+            <a href="https://www.instagram.com/rentastic.homes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+              className="w-9 h-9 rounded-full bg-surface-variant/10 flex items-center justify-center text-primary-fixed hover:bg-primary-fixed hover:text-inverse-surface transition-colors">
+              <Instagram size={16} />
+            </a>
+            {["Facebook", "LinkedIn"].map((label) => (
+              <div key={label} title={`${label} — Coming Soon`}
+                className="relative w-9 h-9 rounded-full bg-surface-variant/5 flex items-center justify-center text-surface-variant/30 cursor-not-allowed">
+                <Clock size={14} />
+                <span className="absolute -top-5 left-1/2 -translate-x-1/2 text-[10px] text-surface-variant/50 whitespace-nowrap hidden group-hover:block">
+                  Coming Soon
+                </span>
+              </div>
             ))}
           </div>
         </div>
@@ -83,9 +85,9 @@ export default function Footer() {
         <div className="flex flex-col gap-sm">
           <h4 className="text-body-md font-semibold text-primary-fixed mb-2">Property Lists</h4>
           {[
-            { label: "PG for Girls",  href: "/pg-for-girls" },
-            { label: "PG for Boys",   href: "/pg-for-boys" },
-            { label: "Navrangpura",   href: "/navrangpura" },
+            { label: "Navrangpura — Boys & Girls", href: "/navrangpura" },
+            { label: "Satellite — Girls PG",       href: "/pg-for-girls" },
+            { label: "Gurukul — Boys PG",           href: "/pg-for-boys" },
           ].map((l) => (
             <Link key={l.href} href={l.href}
               className="text-body-sm text-surface-variant/80 hover:text-primary-fixed-dim transition-colors">
@@ -103,7 +105,11 @@ export default function Footer() {
           </a>
           <a href={`https://wa.me/${siteConfig.whatsapp}`} target="_blank" rel="noopener noreferrer"
             className="text-body-sm text-surface-variant/80 hover:text-primary-fixed-dim transition-colors flex items-center gap-2">
-            <Phone size={14} /> +{siteConfig.whatsapp}
+            <Phone size={14} /> +91 82828 23372
+          </a>
+          <a href="tel:7070848475"
+            className="text-body-sm text-surface-variant/80 hover:text-primary-fixed-dim transition-colors flex items-center gap-2">
+            <Phone size={14} /> +91 70708 48475
           </a>
         </div>
       </div>

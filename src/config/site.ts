@@ -8,8 +8,7 @@ export const siteConfig = {
   whatsappGurukul: "917359678751",   // Rentastic Homes Gurukul Road
   email:       "rentastichomes2025@gmail.com",
   socials: {
-    instagram: "https://instagram.com/rentastichomes",
-    facebook:  "https://facebook.com/rentastichomes",
+    instagram: "https://www.instagram.com/rentastic.homes/",
   },
   properties: [
     {

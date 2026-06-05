@@ -14,16 +14,17 @@ export default function ContactForm() {
 
   function submit(e: React.FormEvent) {
     e.preventDefault();
-    const lines = [
-      `Hi Rentastic Homes! I'd like to get in touch.`,
-      form.name    && `Name: ${form.name}`,
-      form.phone   && `Phone: ${form.phone}`,
-      form.email   && `Email: ${form.email}`,
-      form.message && `Message: ${form.message}`,
-      "Thank you!",
-    ].filter(Boolean).join("\n");
-    const href = buildWhatsAppLink({ name: form.name, phone: form.phone, email: form.email });
-    window.open(href, "_blank", "noopener,noreferrer");
+    const href = buildWhatsAppLink({ name: form.name, phone: form.phone, email: form.email, enquiryFor: form.message });
+    window.location.href = href;
+  }
+
+  function sendEmail(e: React.MouseEvent) {
+    e.preventDefault();
+    const subject = encodeURIComponent("Enquiry – Rentastic Homes");
+    const body = encodeURIComponent(
+      `Hi Rentastic Homes!\n\nName: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email}\nMessage: ${form.message}\n\nThank you!`
+    );
+    window.location.href = `mailto:rentastichomes2025@gmail.com?subject=${subject}&body=${body}`;
   }
 
   return (
@@ -52,9 +53,18 @@ export default function ContactForm() {
           onChange={set("message")}
         />
       </div>
-      <button type="submit" className="bg-primary-container text-on-primary-container py-md rounded-full text-label-caps font-semibold hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-xs">
-        Send on WhatsApp <ArrowRight size={16} />
-      </button>
+      <div className="flex flex-col sm:flex-row gap-sm">
+        <button type="submit" className="flex-1 bg-primary-container text-on-primary-container py-md rounded-full text-label-caps font-semibold hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-xs">
+          Send on WhatsApp <ArrowRight size={16} />
+        </button>
+        <a
+          href="#"
+          onClick={sendEmail}
+          className="flex-1 border border-outline-variant text-on-surface py-md rounded-full text-label-caps font-semibold hover:bg-surface-container transition-colors flex items-center justify-center gap-xs"
+        >
+          Send Email <ArrowRight size={16} />
+        </a>
+      </div>
     </form>
   );
 }

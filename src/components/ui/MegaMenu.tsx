@@ -4,12 +4,13 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence, easeOut } from "framer-motion";
 import { ArrowUpRight, ChevronDown, MapPin } from "lucide-react";
+import { buildWhatsAppLink } from "@/lib/whatsapp";
 
 const CATEGORIES = [
   {
     id: "girls",
     label: "PG for Girls",
-    icon: "👩‍🎓",
+    icon: "girls",
     viewAllHref: "/pg-for-girls",
     properties: [
       {
@@ -31,7 +32,7 @@ const CATEGORIES = [
   {
     id: "boys",
     label: "PG for Boys",
-    icon: "👨‍🎓",
+    icon: "boys",
     viewAllHref: "/pg-for-boys",
     properties: [
       {
@@ -149,7 +150,10 @@ export default function MegaMenu({ isOpen, onOpenChange }: MegaMenuProps) {
                             : "text-on-surface-variant hover:text-on-surface"
                         }`}
                       >
-                        <span>{cat.icon}</span>
+                        <span className="relative flex h-2.5 w-2.5 shrink-0">
+                          <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-60 ${cat.icon === "girls" ? "bg-rose-400" : "bg-blue-400"}`} />
+                          <span className={`relative inline-flex rounded-full h-2.5 w-2.5 ${cat.icon === "girls" ? "bg-rose-500" : "bg-blue-500"}`} />
+                        </span>
                         {cat.label}
                       </button>
                     ))}
@@ -209,13 +213,15 @@ export default function MegaMenu({ isOpen, onOpenChange }: MegaMenuProps) {
                   {["🏠 All properties in Ahmedabad", "✓ Fully managed & furnished", "🔒 24/7 Security"].map((s) => (
                     <span key={s} className="text-xs text-on-surface-variant">{s}</span>
                   ))}
-                  <Link
-                    href="/contact"
+                  <a
+                    href={buildWhatsAppLink({ enquiryFor: "Book a site visit / property tour" })}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => onOpenChange(false)}
                     className="ml-auto text-xs font-semibold text-primary hover:underline flex items-center gap-1"
                   >
                     Book a site visit <ArrowUpRight size={12} />
-                  </Link>
+                  </a>
                 </div>
 
               </div>

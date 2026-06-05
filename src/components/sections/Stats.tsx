@@ -1,7 +1,7 @@
 const stats = [
-  { value: "1000+", label: "Happy Residents" },
-  { value: "10+",   label: "Years Exp." },
-  { value: "37+",   label: "Rooms Managed" },
+  { value: "600+", label: "Happy Residents" },
+  { value: "7+",   label: "Years Exp." },
+  { value: "60+",  label: "Rooms Managed" },
 ];
 
 export default function Stats() {

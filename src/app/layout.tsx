@@ -18,8 +18,10 @@ export const metadata: Metadata = {
   description: "Premium PG & co-living for students and young professionals. Safe, managed, and fully furnished.",
   openGraph: { title: "Rentastic Homes", description: "Checked In, Worries Out!", locale: "en_IN", type: "website" },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-icon.png",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico" },
+    ],
   },
 };
 

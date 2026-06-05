@@ -15,8 +15,7 @@ export const blogPosts: BlogPost[] = [
     title: "PG vs Hostel in Ahmedabad: Which is Better for Students?",
     excerpt:
       "Trying to decide between a PG and a hostel in Ahmedabad? We break down the real differences in cost, privacy, meals, and flexibility so you can make the right call.",
-    cover:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCZKk6PKXFvq9vAxl4k3od7RM85tBG_hjh-Aya87inic3AH789jmquHtRgvwpFUSwDZXproavwVVelh_QqczgBATyOhrRqGIswPffMwW0yFjwHGRx7Spfhp-uPKNcm0m_KvEFMWi9y7dm8Qo8Nv5QDE8frDUrQLygcJeCqNH1VfONXzS1GxFuog1BAxp80182lERkxpH5JHo25Nxea-3T2U1fghGQHvHd-GMzmw0MJRohf39HZ603RfFRihyXXN9KIkI5bA4XGvtW-k",
+    cover: "/properties/gurukul/room-01.jpg",
     date: "May 2025",
     readTime: "5 min read",
     category: "Student Life",
@@ -33,8 +32,7 @@ export const blogPosts: BlogPost[] = [
     title: "Best Areas to Stay in Ahmedabad as a Student (2025 Guide)",
     excerpt:
       "Navrangpura, Satellite, Gurukul, Bopal — which neighbourhood should you pick? Here's an honest breakdown of Ahmedabad's top student-friendly localities.",
-    cover:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCMfLZ75EVdTYWgPSIrXQk7abrLJfieO5RdKn7Nb1KFQ1vvduwYYh0_uQSFMua3nUYt2wq6hCJXBkwThCu-qtowi2nV-CVIORXmBWMoJk_hXfAWzyoSywwafczu_HEBe0gZUguUxAOM_btJ7-ggvpV_v-_H13XdeEmP-hMwx354O2XC7qNQDXBnFEqHr5PVhTjTYFG9s-mF2Uq_MW4rUltB4OhzZe469fPJa1Xs4-4fbty8OTAlzZQFNnwrUrdr0kv21C4ClfxQKN4y",
+    cover: "/properties/satellite/common-01.jpg",
     date: "April 2025",
     readTime: "6 min read",
     category: "Ahmedabad Guide",
@@ -52,8 +50,7 @@ export const blogPosts: BlogPost[] = [
     title: "What to Pack When Moving Into a PG (Complete Checklist)",
     excerpt:
       "First time moving into a PG? Don't over-pack or under-pack. Here's the practical checklist we wish someone had given us — based on what residents actually use.",
-    cover:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCIdlLjcTKLHNWLGq_ibel4c9cVhFdrOuIGTpGu8mBnYm_VsusZL1WktNE08UtktIT9X1nob9izQExvox2TjMij8FldTCDxBbCmm3q_k5KvCqEgCKbWFJjbp55eexaWkfcap82oyNrgz9ryVXe3eLs7DHZDZqW3nZoE4M09JElNem2GnGVlnY6svthLq-aW-aeFD_bjyy8nmypcX6Hq7Hy4NaatZzmGRf_mHcO1ClUqYC7TJp0sFy1_fYobCwk0WWyuoUNRaPZ6h",
+    cover: "/properties/ansh/wp-03.jpg",
     date: "March 2025",
     readTime: "4 min read",
     category: "Student Life",

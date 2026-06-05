@@ -13,7 +13,7 @@ const contactDetails = [
   {
     icon: <Phone size={24} />,
     label: "Call / WhatsApp",
-    value: `+${siteConfig.whatsapp}`,
+    value: "+91 82828 23372  |  +91 70708 48475",
     href:  `https://wa.me/${siteConfig.whatsapp}`,
   },
   {
@@ -24,9 +24,9 @@ const contactDetails = [
   },
   {
     icon: <MapPin size={24} />,
-    label: "Offices",
-    value: "Navrangpura, Satellite & Gurukul",
-    href:  "https://maps.google.com",
+    label: "Office — Gurukul",
+    value: "207 Pushti Heights, Subhash Chowk, Gurukul, Ahmedabad 380052",
+    href:  "https://www.google.com/maps/search/?api=1&query=207+Pushti+Heights+Subhash+Chowk+Gurukul+Ahmedabad+Gujarat+380052",
   },
 ];
 

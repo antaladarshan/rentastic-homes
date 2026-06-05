@@ -7,14 +7,14 @@ const cards = [
   {
     label: "PG for Girls",
     href:  "/pg-for-girls",
-    src:   "https://lh3.googleusercontent.com/aida-public/AB6AXuBE1TuTlc_-UuCQZKwdb6cMVT50AZ1j5ZSAdq-zUNF-GMA40p3Qe_sR5GWXJPBEU6jmaiR6v6Jn6tMS52WtgARIKEhWuOtu4gTM-LkXyUQsVpYyVd7nwwZf_nf1_J_WwYyVHagBOatdYiTb2i8YJVvxVp2RzhHzSC-7iwkfLaK2nFpVtmLN_TQjPesnWsdvu08cZWwl7LWh9Lhh3H7bCB3XDCcraBTHB-DrzNEjzyG9v2H5uPQad7Nd6jXV4z7WNg36uHkoSOhMOwVr",
-    alt:   "Two young women in a bright modern co-living room",
+    src:   "/properties/ansh/wp-01.jpg",
+    alt:   "Girls PG at Rentastic Homes Ansh, Navrangpura",
   },
   {
     label: "PG for Boys",
     href:  "/pg-for-boys",
-    src:   "https://lh3.googleusercontent.com/aida-public/AB6AXuCM9sS6ij3sAlKXVSMWhFqF867U7U3mKeTMeO1PRfynqIq7Nx9lS96CRqEbua5uXtZKaKJk2W3YWQCZGfv_wA7srKg1RBbos515lc4eFUk9EQrxvzfzqHMlDOGlddFphdk2BWAYY2I-MtK-kI_SolRdV78nL11IX0Vt6kk7LQ3cBfxNhkKEi-y59iwW8AqepIUwVP7Nd225mAvvUxD5Kex7hgcjw4OXrLAeEmlIh86RHuJqXm90FdUETIkSNbVR1S0_0JbaFN_TJSbN",
-    alt:   "Two male students hanging out in a stylish co-living lounge",
+    src:   "/properties/ansh/vc-01.jpg",
+    alt:   "Boys PG at Rentastic Homes Ansh, Navrangpura",
   },
 ];
 

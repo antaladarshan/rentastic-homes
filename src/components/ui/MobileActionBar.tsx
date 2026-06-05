@@ -31,7 +31,9 @@ export default function MobileActionBar() {
         </a>
 
         <a
-          href="#enquire"
+          href={buildWhatsAppLink({ enquiryFor: "PG / co-living accommodation" })}
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex-[2] flex items-center justify-center gap-xs bg-primary text-on-primary rounded-xl py-sm font-semibold text-body-sm hover:bg-primary/90 transition-colors"
           aria-label="Enquire now"
         >

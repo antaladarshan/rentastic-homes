@@ -70,7 +70,7 @@ export default function Reviews() {
       </div>
 
       {/* Auto-scrolling strip */}
-      <div className="relative">
+      <div className="relative overflow-hidden">
         {/* Left fade */}
         <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 z-10 bg-gradient-to-r from-surface-container-low to-transparent" />
         {/* Right fade */}

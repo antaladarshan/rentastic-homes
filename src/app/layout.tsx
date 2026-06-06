@@ -3,6 +3,7 @@ import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import FloatingNav from "@/components/layout/FloatingNav";
 import Footer from "@/components/layout/Footer";
 import MobileActionBar from "@/components/ui/MobileActionBar";
+import PageLoader from "@/components/ui/PageLoader";
 import "./globals.css";
 
 const inter = Inter({
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${plusJakarta.variable} scroll-smooth`}>
       <body className="min-h-screen flex flex-col antialiased overflow-x-hidden bg-background text-on-background pt-16">
+        <PageLoader />
         <FloatingNav />
         <main className="flex-1">{children}</main>
         <Footer />

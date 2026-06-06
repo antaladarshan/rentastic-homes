@@ -153,3 +153,196 @@ body { background-color: #fff8f5; color: #2b1706;
 @media (prefers-reduced-motion: reduce) {
   .animate-reviews-scroll { animation: none; }
 }
+
+/* ── Page Loader overlay ─────────────────────────────────────── */
+#page-loader {
+  --pl-cream:   #F5EBD9;
+  --pl-cream-2: #EBDDC2;
+  --pl-honey:   #F2B66B;
+  --pl-honey-2: #E89846;
+  --pl-bark:    #4A2E1A;
+  --pl-bark-2:  #6B3F22;
+
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: radial-gradient(ellipse at top, #FBF3E3 0%, var(--pl-cream) 50%, var(--pl-cream-2) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  overflow: hidden;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+#page-loader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Floating dust motes */
+#page-loader .pl-mote {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--pl-honey);
+  opacity: 0;
+  filter: blur(1px);
+  animation: pl-drift 12s ease-in-out infinite;
+}
+#page-loader .pl-mote:nth-child(1) { left: 12%;  top: 30%; animation-delay: 0s;   }
+#page-loader .pl-mote:nth-child(2) { left: 84%;  top: 20%; animation-delay: 2.5s; width: 4px; height: 4px; }
+#page-loader .pl-mote:nth-child(3) { left: 22%;  top: 78%; animation-delay: 4.5s; width: 8px; height: 8px; }
+#page-loader .pl-mote:nth-child(4) { left: 78%;  top: 70%; animation-delay: 1.2s; }
+#page-loader .pl-mote:nth-child(5) { left: 50%;  top: 12%; animation-delay: 6s;   width: 5px; height: 5px; }
+#page-loader .pl-mote:nth-child(6) { left: 92%;  top: 50%; animation-delay: 3.8s; width: 4px; height: 4px; }
+#page-loader .pl-mote:nth-child(7) { left: 7%;   top: 55%; animation-delay: 7.5s; width: 5px; height: 5px; }
+
+@keyframes pl-drift {
+  0%, 100% { transform: translateY(0)    translateX(0)    scale(0.6); opacity: 0; }
+  20%      { opacity: 0.45; }
+  50%      { transform: translateY(-30px) translateX(15px) scale(1);   opacity: 0.6; }
+  80%      { opacity: 0.35; }
+}
+
+/* Logo wrapper */
+#page-loader .pl-logo-wrap {
+  position: relative;
+  width: min(440px, 78vw);
+  aspect-ratio: 1.62 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+  animation:
+    pl-stampIn  0.95s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
+    pl-floatY   5s   ease-in-out 1.2s infinite;
+}
+
+#page-loader .pl-logo-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(255,240,200,0.55) 50%, transparent 65%);
+  mix-blend-mode: overlay;
+  transform: translateX(-150%);
+  pointer-events: none;
+  animation: pl-shineSweep 2.6s ease-out 1.1s 1 forwards;
+  border-radius: 12px;
+}
+
+#page-loader .pl-logo-shadow {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: -8%;
+  height: 22px;
+  background: radial-gradient(ellipse at center, rgba(74,46,26,0.35) 0%, transparent 70%);
+  filter: blur(8px);
+  transform-origin: center;
+  opacity: 0;
+  animation:
+    pl-shadowIn    0.95s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
+    pl-shadowPulse 5s   ease-in-out 1.2s infinite;
+}
+
+#page-loader .pl-logo-img {
+  object-fit: contain !important;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Loader dots + text */
+#page-loader .pl-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  opacity: 0;
+  animation: pl-fadeUp 0.7s ease-out 1.4s forwards;
+}
+
+#page-loader .pl-dots {
+  display: flex;
+  gap: 10px;
+}
+
+#page-loader .pl-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--pl-honey-2);
+  animation: pl-dotBounce 1.4s ease-in-out infinite;
+}
+#page-loader .pl-dot:nth-child(1) { animation-delay: 0s;    }
+#page-loader .pl-dot:nth-child(2) { animation-delay: 0.18s; }
+#page-loader .pl-dot:nth-child(3) { animation-delay: 0.36s; }
+
+#page-loader .pl-loader-text {
+  font-size: 13px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: var(--pl-bark-2);
+  font-weight: 500;
+}
+
+#page-loader .pl-blink {
+  display: inline-block;
+  animation: pl-blink 1.4s ease-in-out infinite;
+}
+#page-loader .pl-blink:nth-child(2) { animation-delay: 0.25s; }
+#page-loader .pl-blink:nth-child(3) { animation-delay: 0.5s;  }
+
+/* Keyframes */
+@keyframes pl-stampIn {
+  0%   { opacity: 0; transform: translateY(-60px) scale(0.4) rotate(-8deg); filter: blur(8px); }
+  55%  { opacity: 1; transform: translateY(8px)   scale(1.08) rotate(2deg); filter: blur(0); }
+  75%  {              transform: translateY(-2px)  scale(0.97) rotate(-1deg); }
+  100% { opacity: 1; transform: translateY(0)     scale(1)    rotate(0deg); filter: blur(0); }
+}
+@keyframes pl-shadowIn {
+  0%   { opacity: 0;   transform: scaleX(0.2); }
+  55%  { opacity: 0.9; transform: scaleX(1.15); }
+  100% { opacity: 1;   transform: scaleX(1); }
+}
+@keyframes pl-floatY {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+@keyframes pl-shadowPulse {
+  0%, 100% { opacity: 1;   transform: scaleX(1); }
+  50%      { opacity: 0.7; transform: scaleX(0.92); }
+}
+@keyframes pl-shineSweep {
+  0%   { transform: translateX(-150%); }
+  100% { transform: translateX(150%); }
+}
+@keyframes pl-dotBounce {
+  0%, 80%, 100% { transform: translateY(0)    scale(0.85); opacity: 0.55; }
+  40%           { transform: translateY(-14px) scale(1);    opacity: 1;    }
+}
+@keyframes pl-fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pl-blink {
+  0%, 60%, 100% { opacity: 0.2; }
+  30%           { opacity: 1;   }
+}
+
+/* Reduced motion: skip animations, still fades out normally */
+@media (prefers-reduced-motion: reduce) {
+  #page-loader .pl-logo-wrap,
+  #page-loader .pl-logo-shadow,
+  #page-loader .pl-loader,
+  #page-loader .pl-dot,
+  #page-loader .pl-mote,
+  #page-loader .pl-blink,
+  #page-loader .pl-logo-wrap::before {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

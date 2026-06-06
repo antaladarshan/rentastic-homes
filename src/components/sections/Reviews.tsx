@@ -1,7 +1,14 @@
 "use client";
 
-import { Star } from "lucide-react";
+import { useState } from "react";
+import { Star, X, MapPin, ArrowUpRight } from "lucide-react";
 import { reviews, aggregateRating } from "@/data/reviews";
+
+const REVIEW_PROPERTIES = [
+  { name: "Rentastic Homes Ansh", location: "Navrangpura", url: "https://maps.app.goo.gl/pM9WXJDypDDUZHx58" },
+  { name: "Rentastic Homes Gurukul Road", location: "Gurukul", url: "https://maps.app.goo.gl/Th3TWRFNADi1Qziv6" },
+  { name: "Rentastic Homes Girls Satellite", location: "Satellite", url: "https://maps.app.goo.gl/Phnw5GBsrmtMAYnT8" },
+];
 
 function Stars({ rating }: { rating: number }) {
   return (
@@ -42,6 +49,7 @@ function ReviewCard({ r }: { r: typeof reviews[number] }) {
 
 export default function Reviews() {
   const doubled = [...reviews, ...reviews];
+  const [reviewOpen, setReviewOpen] = useState(false);
 
   return (
     <section className="py-xl bg-surface-container-low overflow-hidden">
@@ -59,14 +67,12 @@ export default function Reviews() {
             </div>
           </div>
         </div>
-        <a
-          href="https://g.co/kgs/rentastichomes"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={() => setReviewOpen(true)}
           className="shrink-0 inline-flex items-center gap-xs px-lg py-sm rounded-full border border-outline-variant/30 text-body-sm font-medium text-on-surface hover:bg-surface-container transition-colors"
         >
           Write a Review →
-        </a>
+        </button>
       </div>
 
       {/* Auto-scrolling strip */}
@@ -76,15 +82,61 @@ export default function Reviews() {
         {/* Right fade */}
         <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 z-10 bg-gradient-to-l from-surface-container-low to-transparent" />
 
-        <div
-          className="flex w-max animate-reviews-scroll"
-          style={{ willChange: "transform" }}
-        >
+        <div className="flex w-max animate-reviews-scroll">
           {doubled.map((r, i) => (
             <ReviewCard key={`${r.id}-${i}`} r={r} />
           ))}
         </div>
       </div>
+
+      {/* Property picker modal */}
+      {reviewOpen && (
+        <div
+          className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center px-4"
+          onClick={() => setReviewOpen(false)}
+        >
+          <div
+            className="bg-white rounded-2xl shadow-2xl w-full max-w-sm p-6 flex flex-col gap-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-start justify-between gap-2">
+              <div>
+                <h3 className="text-headline-sm text-on-surface font-semibold">Which home are you reviewing?</h3>
+                <p className="text-body-sm text-on-surface-variant mt-1">Pick your property to leave a Google review.</p>
+              </div>
+              <button
+                onClick={() => setReviewOpen(false)}
+                className="p-1.5 rounded-full hover:bg-neutral-100 transition-colors text-on-surface-variant"
+                aria-label="Close"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              {REVIEW_PROPERTIES.map((p) => (
+                <a
+                  key={p.url}
+                  href={p.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setReviewOpen(false)}
+                  className="flex items-center justify-between gap-3 p-3 rounded-xl border border-outline-variant/30 hover:bg-surface-container hover:border-primary/30 transition-colors group"
+                >
+                  <div className="flex items-center gap-2 min-w-0">
+                    <MapPin size={16} className="text-primary shrink-0" />
+                    <div className="min-w-0">
+                      <p className="text-body-sm font-semibold text-on-surface truncate">{p.name}</p>
+                      <p className="text-label-sm text-on-surface-variant">{p.location}</p>
+                    </div>
+                  </div>
+                  <ArrowUpRight size={16} className="text-primary shrink-0 opacity-60 group-hover:opacity-100 transition-opacity" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

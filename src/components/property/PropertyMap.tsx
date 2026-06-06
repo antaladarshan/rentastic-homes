@@ -1,11 +1,12 @@
 interface PropertyMapProps {
   address: string;
   name: string;
+  mapLink?: string;
 }
 
-export default function PropertyMap({ address, name }: PropertyMapProps) {
+export default function PropertyMap({ address, name, mapLink }: PropertyMapProps) {
   const q = encodeURIComponent(address);
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${q}`;
+  const mapsUrl = mapLink ?? `https://www.google.com/maps/search/?api=1&query=${q}`;
 
   return (
     <section>

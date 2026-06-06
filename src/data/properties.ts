@@ -17,6 +17,7 @@ export interface PropertyData {
   slug:               string;
   name:               string;
   address:            string;
+  mapLink?:           string;
   sharingTypes:       string[];
   gallery:            { src: string; alt: string }[];
   trustStats:         { value: string; label: string; sub: string }[];
@@ -147,6 +148,7 @@ export const propertiesData: PropertyData[] = [
     slug:           "ansh-rentastic-girls-pg",
     name:           "Ansh Rentastic Girls PG",
     address:        "Navrangpura, Ahmedabad, Gujarat",
+    mapLink:        "https://maps.app.goo.gl/pM9WXJDypDDUZHx58",
     sharingTypes:   ["Single Sharing", "Double Sharing"],
     gallery:        GALLERY_ANSH_GIRLS,
     trustStats:     TRUST_STATS,
@@ -168,6 +170,7 @@ export const propertiesData: PropertyData[] = [
     slug:           "rentastic-girls-satellite",
     name:           "Rentastic Girls Satellite",
     address:        "4th Floor, Aishwarya Apartment, opp. Star Bazaar, Satellite, Ahmedabad, Gujarat 380015",
+    mapLink:        "https://maps.app.goo.gl/Phnw5GBsrmtMAYnT8",
     sharingTypes:   ["3 Sharing", "4 Sharing", "4 Sharing (Balcony)"],
     gallery:        GALLERY_SATELLITE,
     trustStats:     TRUST_STATS,
@@ -190,6 +193,7 @@ export const propertiesData: PropertyData[] = [
     slug:           "gurukul-road",
     name:           "Rentastic Homes Gurukul Road",
     address:        "2nd Floor, Pushti Heights, Subhash Chowk, opp. Navneet House, Gurukul, Ahmedabad, Gujarat 380052",
+    mapLink:        "https://maps.app.goo.gl/Th3TWRFNADi1Qziv6",
     sharingTypes:   ["Single Sharing", "Double Sharing", "Triple Sharing"],
     gallery:        GALLERY_GURUKUL,
     trustStats:     TRUST_STATS,
@@ -212,6 +216,7 @@ export const propertiesData: PropertyData[] = [
     slug:           "rentastic-ansh-boys-pg",
     name:           "Rentastic Ansh Boys PG",
     address:        "Navrangpura, Ahmedabad, Gujarat",
+    mapLink:        "https://maps.app.goo.gl/pM9WXJDypDDUZHx58",
     sharingTypes:   ["Single Sharing", "Double Sharing", "Triple Sharing"],
     gallery:        GALLERY_ANSH_BOYS,
     trustStats:     TRUST_STATS,

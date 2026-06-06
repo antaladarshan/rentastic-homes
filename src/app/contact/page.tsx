@@ -26,7 +26,7 @@ const contactDetails = [
     icon: <MapPin size={24} />,
     label: "Office — Gurukul",
     value: "207 Pushti Heights, Subhash Chowk, Gurukul, Ahmedabad 380052",
-    href:  "https://www.google.com/maps/search/?api=1&query=207+Pushti+Heights+Subhash+Chowk+Gurukul+Ahmedabad+Gujarat+380052",
+    href:  "https://maps.app.goo.gl/Th3TWRFNADi1Qziv6",
   },
 ];
 

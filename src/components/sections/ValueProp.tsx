@@ -12,8 +12,8 @@ const cards = [
     text: "First Time Out... Low-Key Freaking Out?",
   },
   {
-    src:  "/properties/gurukul/lifestyle-03.jpg",
-    alt:  "Residents relaxing together at Rentastic Homes",
+    src:  "/properties/gurukul/room-02.jpg",
+    alt:  "Furnished room at Rentastic Homes Gurukul Road",
     text: "Life Feeling A Bit... Stuck?",
   },
   {

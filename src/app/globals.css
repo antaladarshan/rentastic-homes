@@ -142,14 +142,13 @@ body { background-color: #fff8f5; color: #2b1706;
 
 /* ── Reviews horizontal auto-scroll ─────────────────────────── */
 @keyframes reviewsScroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 .animate-reviews-scroll {
-  animation: reviewsScroll 40s linear infinite;
-}
-.animate-reviews-scroll:hover {
-  animation-play-state: paused;
+  animation: reviewsScroll 35s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 @media (prefers-reduced-motion: reduce) {
   .animate-reviews-scroll { animation: none; }

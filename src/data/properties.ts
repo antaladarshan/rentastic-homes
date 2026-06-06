@@ -18,6 +18,7 @@ export interface PropertyData {
   name:               string;
   address:            string;
   mapLink?:           string;
+  coords?:            { lat: number; lng: number };
   sharingTypes:       string[];
   gallery:            { src: string; alt: string }[];
   trustStats:         { value: string; label: string; sub: string }[];
@@ -149,6 +150,7 @@ export const propertiesData: PropertyData[] = [
     name:           "Ansh Rentastic Girls PG",
     address:        "Navrangpura, Ahmedabad, Gujarat",
     mapLink:        "https://maps.app.goo.gl/pM9WXJDypDDUZHx58",
+    coords:         { lat: 23.0358, lng: 72.5649 },
     sharingTypes:   ["Single Sharing", "Double Sharing"],
     gallery:        GALLERY_ANSH_GIRLS,
     trustStats:     TRUST_STATS,
@@ -171,6 +173,7 @@ export const propertiesData: PropertyData[] = [
     name:           "Rentastic Girls Satellite",
     address:        "4th Floor, Aishwarya Apartment, opp. Star Bazaar, Satellite, Ahmedabad, Gujarat 380015",
     mapLink:        "https://maps.app.goo.gl/Phnw5GBsrmtMAYnT8",
+    coords:         { lat: 23.0219, lng: 72.5068 },
     sharingTypes:   ["3 Sharing", "4 Sharing", "4 Sharing (Balcony)"],
     gallery:        GALLERY_SATELLITE,
     trustStats:     TRUST_STATS,
@@ -194,6 +197,7 @@ export const propertiesData: PropertyData[] = [
     name:           "Rentastic Homes Gurukul Road",
     address:        "2nd Floor, Pushti Heights, Subhash Chowk, opp. Navneet House, Gurukul, Ahmedabad, Gujarat 380052",
     mapLink:        "https://maps.app.goo.gl/Th3TWRFNADi1Qziv6",
+    coords:         { lat: 23.0558, lng: 72.5413 },
     sharingTypes:   ["Single Sharing", "Double Sharing", "Triple Sharing"],
     gallery:        GALLERY_GURUKUL,
     trustStats:     TRUST_STATS,
@@ -217,6 +221,7 @@ export const propertiesData: PropertyData[] = [
     name:           "Rentastic Ansh Boys PG",
     address:        "Navrangpura, Ahmedabad, Gujarat",
     mapLink:        "https://maps.app.goo.gl/pM9WXJDypDDUZHx58",
+    coords:         { lat: 23.0358, lng: 72.5649 },
     sharingTypes:   ["Single Sharing", "Double Sharing", "Triple Sharing"],
     gallery:        GALLERY_ANSH_BOYS,
     trustStats:     TRUST_STATS,

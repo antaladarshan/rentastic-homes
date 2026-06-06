@@ -111,7 +111,7 @@ export default async function PropertyPage({ params }: { params: Promise<{ slug:
             />
 
             {/* Map */}
-            <PropertyMap address={property.address} name={property.name} mapLink={property.mapLink} />
+            <PropertyMap address={property.address} name={property.name} mapLink={property.mapLink} coords={property.coords} />
 
             {/* Policies */}
             <PoliciesAccordion policies={property.policies} />

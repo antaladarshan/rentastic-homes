@@ -2,11 +2,15 @@ interface PropertyMapProps {
   address: string;
   name: string;
   mapLink?: string;
+  coords?: { lat: number; lng: number };
 }
 
-export default function PropertyMap({ address, name, mapLink }: PropertyMapProps) {
+export default function PropertyMap({ address, name, mapLink, coords }: PropertyMapProps) {
   const q = encodeURIComponent(address);
   const mapsUrl = mapLink ?? `https://www.google.com/maps/search/?api=1&query=${q}`;
+  const embedSrc = coords
+    ? `https://maps.google.com/maps?q=${coords.lat},${coords.lng}&z=18&output=embed`
+    : `https://www.google.com/maps?q=${q}&z=17&output=embed`;
 
   return (
     <section>
@@ -14,7 +18,7 @@ export default function PropertyMap({ address, name, mapLink }: PropertyMapProps
       <div className="rounded-2xl overflow-hidden border border-outline-variant/20 shadow-sm">
         <iframe
           title={`Map for ${name}`}
-          src={`https://www.google.com/maps?q=${q}&output=embed`}
+          src={embedSrc}
           width="100%"
           height="320"
           loading="lazy"

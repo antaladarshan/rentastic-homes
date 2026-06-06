@@ -92,28 +92,32 @@ export default function Reviews() {
       {/* Property picker modal */}
       {reviewOpen && (
         <div
-          className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center px-4"
+          className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4"
           onClick={() => setReviewOpen(false)}
         >
           <div
-            className="bg-white rounded-2xl shadow-2xl w-full max-w-sm p-6 flex flex-col gap-4"
+            className="bg-white rounded-2xl shadow-2xl p-6 flex flex-col gap-5"
+            style={{ width: "min(420px, 92vw)" }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-start justify-between gap-2">
+            {/* Header */}
+            <div className="flex items-start justify-between gap-4">
               <div>
-                <h3 className="text-headline-sm text-on-surface font-semibold">Which home are you reviewing?</h3>
-                <p className="text-body-sm text-on-surface-variant mt-1">Pick your property to leave a Google review.</p>
+                <p className="text-label-caps text-primary tracking-widest uppercase text-xs mb-1">Leave a review</p>
+                <h3 className="text-xl font-bold text-on-surface leading-snug">Which home are you reviewing?</h3>
+                <p className="text-sm text-on-surface-variant mt-1">Pick your property — you&apos;ll be taken to Google Maps to leave your review.</p>
               </div>
               <button
                 onClick={() => setReviewOpen(false)}
-                className="p-1.5 rounded-full hover:bg-neutral-100 transition-colors text-on-surface-variant"
+                className="shrink-0 w-8 h-8 flex items-center justify-center rounded-full hover:bg-neutral-100 transition-colors text-on-surface-variant"
                 aria-label="Close"
               >
                 <X size={18} />
               </button>
             </div>
 
-            <div className="flex flex-col gap-2">
+            {/* Property list */}
+            <div className="flex flex-col gap-3">
               {REVIEW_PROPERTIES.map((p) => (
                 <a
                   key={p.url}
@@ -121,19 +125,22 @@ export default function Reviews() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setReviewOpen(false)}
-                  className="flex items-center justify-between gap-3 p-3 rounded-xl border border-outline-variant/30 hover:bg-surface-container hover:border-primary/30 transition-colors group"
+                  className="flex items-center gap-3 p-4 rounded-xl border border-neutral-200 hover:border-primary/50 hover:bg-amber-50/40 transition-all group"
                 >
-                  <div className="flex items-center gap-2 min-w-0">
-                    <MapPin size={16} className="text-primary shrink-0" />
-                    <div className="min-w-0">
-                      <p className="text-body-sm font-semibold text-on-surface truncate">{p.name}</p>
-                      <p className="text-label-sm text-on-surface-variant">{p.location}</p>
-                    </div>
+                  <div className="shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <MapPin size={18} className="text-primary" />
                   </div>
-                  <ArrowUpRight size={16} className="text-primary shrink-0 opacity-60 group-hover:opacity-100 transition-opacity" />
+                  <div className="flex-1">
+                    <p className="font-semibold text-on-surface text-sm leading-snug">{p.name}</p>
+                    <p className="text-xs text-on-surface-variant mt-0.5">{p.location}, Ahmedabad</p>
+                  </div>
+                  <ArrowUpRight size={18} className="shrink-0 text-primary opacity-40 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </a>
               ))}
             </div>
+
+            {/* Footer note */}
+            <p className="text-xs text-center text-on-surface-variant/60">Opens Google Maps in a new tab</p>
           </div>
         </div>
       )}

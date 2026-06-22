@@ -214,7 +214,7 @@ export const propertiesData: PropertyData[] = [
     roomAmenities:     ROOM_AMENITIES,
     propertyAmenities: PROPERTY_AMENITIES,
     policies:          POLICIES,
-    whatsappNumber:    "917359678751",
+    whatsappNumber:    "917070848475",
   },
   {
     slug:           "rentastic-ansh-boys-pg",

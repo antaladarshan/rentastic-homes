@@ -5,7 +5,7 @@ export const siteConfig = {
   url:         "https://rentastichomes.com",
   whatsapp:    "918282823372",     // Rentastic Homes Ansh (Boys + Girls)
   whatsappSatellite: "918511671066", // Rentastic Homes Girls Satellite
-  whatsappGurukul: "917359678751",   // Rentastic Homes Gurukul Road
+  whatsappGurukul: "917070848475",   // Rentastic Homes Gurukul Road
   email:       "rentastichomes2025@gmail.com",
   socials: {
     instagram: "https://www.instagram.com/rentastic.homes/",
@@ -58,8 +58,8 @@ export const siteConfig = {
       location: "Gurukul",
       address: "2nd Floor, 207, Pushti Heights, Subhash Chowk, opp. NAVNEET HOUSE, Nilmani Society, Gurukul, Ahmedabad, Gujarat 380052",
       mapLink: "https://maps.app.goo.gl/Th3TWRFNADi1Qziv6",
-      whatsapp: "917359678751",
-      phone: "7359678751",
+      whatsapp: "917070848475",
+      phone: "7070848475",
       hours: "10:00 AM - 10:00 PM",
       priceRange: { min: 11000, max: 17000 },
       status: "Limited Seats Available",

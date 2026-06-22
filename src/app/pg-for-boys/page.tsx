@@ -29,7 +29,7 @@ const properties: Property[] = [
     description:    "Premium co-living spaces on Gurukul Road with modern facilities. ₹11,000 - ₹17,000/month. Premium location with excellent connectivity.",
     badge:          "Limited Seats Available",
     href:           "/property/gurukul-road",
-    whatsappNumber:  "917359678751",
+    whatsappNumber:  "917070848475",
     imageSrc:       "/properties/gurukul/lifestyle-05.jpg",
     imageAlt:       "Study zone at Rentastic Homes Gurukul Road",
   },

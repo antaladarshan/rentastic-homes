@@ -30,7 +30,7 @@ const properties: Property[] = [
     badge:           "Limited Seats Available",
     href:            "/property/rentastic-girls-satellite",
     whatsappNumber:  "918511671066",
-    imageSrc:        "/properties/satellite/4-sharing-01.jpg",
+    imageSrc:        "/properties/satellite/room-05.jpg",
     imageAlt:        "AC room at Rentastic Homes Girls Satellite",
   },
 ];

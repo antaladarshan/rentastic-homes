@@ -20,8 +20,8 @@ const properties: Property[] = [
     badge:          "Limited Seats Available",
     href:           "/property/rentastic-ansh-boys-pg",
     whatsappNumber: "918282823372",
-    imageSrc:       "/properties/ansh/vc-05.jpg",
-    imageAlt:       "Common area at Rentastic Homes Ansh Boys PG",
+    imageSrc:       "/properties/ansh-boys/room-wide-01.jpg",
+    imageAlt:       "Spacious shared room at Rentastic Homes Ansh Boys PG",
   },
   {
     id:             "gurukul-boys",
@@ -30,8 +30,8 @@ const properties: Property[] = [
     badge:          "Limited Seats Available",
     href:           "/property/gurukul-road",
     whatsappNumber:  "917070848475",
-    imageSrc:       "/properties/gurukul/lifestyle-05.jpg",
-    imageAlt:       "Study zone at Rentastic Homes Gurukul Road",
+    imageSrc:       "/properties/gurukul-road/common-lounge-01.jpg",
+    imageAlt:       "Common lounge at Rentastic Homes Gurukul Road",
   },
 ];
 

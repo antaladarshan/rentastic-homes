@@ -15,7 +15,7 @@ export const blogPosts: BlogPost[] = [
     title: "PG vs Hostel in Ahmedabad: Which is Better for Students?",
     excerpt:
       "Trying to decide between a PG and a hostel in Ahmedabad? We break down the real differences in cost, privacy, meals, and flexibility so you can make the right call.",
-    cover: "/properties/gurukul/room-01.jpg",
+    cover: "/properties/gurukul-road/room-ac-01.jpg",
     date: "May 2025",
     readTime: "5 min read",
     category: "Student Life",
@@ -32,7 +32,7 @@ export const blogPosts: BlogPost[] = [
     title: "Best Areas to Stay in Ahmedabad as a Student (2025 Guide)",
     excerpt:
       "Navrangpura, Satellite, Gurukul, Bopal — which neighbourhood should you pick? Here's an honest breakdown of Ahmedabad's top student-friendly localities.",
-    cover: "/properties/satellite/common-01.jpg",
+    cover: "/properties/satellite/room-04.jpg",
     date: "April 2025",
     readTime: "6 min read",
     category: "Ahmedabad Guide",
